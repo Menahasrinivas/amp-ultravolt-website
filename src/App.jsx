@@ -10,6 +10,7 @@ import Projects from "./components/Projects";
 import Stats from "./components/Stats";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import TopTextCarousel from "./components/TopTextCarousel";
 
 export default function App() {
   useEffect(() => {
@@ -22,7 +23,9 @@ export default function App() {
 
   return (
     <>
+  
       <Header />
+        <TopTextCarousel />
       <Hero />
       <Aboutus />
       <Services />

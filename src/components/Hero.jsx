@@ -3,8 +3,9 @@ import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
 import banner1 from "../assets/banner4.jpg";
-import banner2 from "../assets/banner2.jpg";
+import banner2 from "../assets/bannerimg3.jpg";
 import banner3 from "../assets/banner7.jpg";
+import banner4 from "../assets/banner2.jpg";
 
 export default function Hero() {
   return (
@@ -13,11 +14,11 @@ export default function Hero() {
       {/* IMAGE CAROUSEL */}
       <Swiper
         modules={[Autoplay]}
-        autoplay={{ delay: 4000, disableOnInteraction: false }}
+        autoplay={{ delay: 3000, disableOnInteraction: false }}
         loop
         className="h-full w-full"
       >
-        {[banner1, banner2, banner3].map((img, i) => (
+        {[banner1, banner2, banner3, banner4].map((img, i) => (
           <SwiperSlide key={i}>
             <img
               src={img}
@@ -62,6 +63,23 @@ export default function Hero() {
           <p className="text-gray-200 text-sm md:text-lg leading-relaxed">
             Delivering reliable, sustainable and cost-effective energy solutions.
           </p>
+
+          <div className="mt-8 flex justify-center">
+  <a
+    href="#contact"
+    className="
+      px-8 py-3
+      bg-green-600
+      text-white
+      font-medium
+      rounded-md
+      hover:bg-green-700
+      transition
+    "
+  >
+    Connect With Us
+  </a>
+</div>
         </div>
       </div>
 

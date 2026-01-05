@@ -28,15 +28,15 @@ export default function Services() {
   ];
 
   return (
-    <section className="py-16 bg-gray-400">
+    <section className="py-20 bg-slate-200">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* SECTION TITLE */}
-        <div className="text-center mb-12" data-aos="fade-up">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+        <div className="text-center mb-14" data-aos="fade-up">
+          <h2 className="text-3xl md:text-4xl font-bold text-slate-900">
             Our Services
           </h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-4 text-slate-700 max-w-2xl mx-auto">
             Delivering reliable and sustainable energy solutions through
             comprehensive engineering and execution services.
           </p>
@@ -49,29 +49,41 @@ export default function Services() {
               key={i}
               data-aos="zoom-in"
               data-aos-delay={i * 100}
-              className="bg-gray-50 rounded-xl p-6 text-center
-                         shadow hover:shadow-xl transition-all duration-300
-                         group"
+              className="
+                group bg-white rounded-2xl p-6 text-center
+                shadow-[0_10px_30px_rgba(0,0,0,0.08)]
+                border border-transparent
+                hover:-translate-y-2
+                hover:shadow-[0_20px_45px_rgba(0,0,0,0.15)]
+                hover:border-slate-200
+                transition-all duration-300
+              "
             >
-              {/* ICON */}
-              <div className="flex justify-center mb-5">
+              {/* IMAGE */}
+              <div className="mb-6 overflow-hidden rounded-xl">
                 <img
                   src={service.icon}
                   alt={service.title}
-                  className="h-30 w-30 object-contain
-                             transition-transform duration-300
-                             group-hover:scale-110"
+                  className="
+                    w-full h-40 object-cover
+                    transition-transform duration-500
+                    group-hover:scale-110
+                  "
                 />
               </div>
 
               {/* TITLE */}
-              <h3 className="text-lg font-semibold text-gray-800 mb-2
-                             group-hover:text-red-600 transition">
+              <h3
+                className="
+                  text-lg font-semibold text-slate-900 mb-2
+                  group-hover:text-green-600 transition
+                "
+              >
                 {service.title}
               </h3>
 
               {/* DESCRIPTION */}
-              <p className="text-sm text-gray-600">
+              <p className="text-sm text-slate-600 leading-relaxed">
                 {service.desc}
               </p>
             </div>

@@ -1,31 +1,46 @@
+import contactBg from "../assets/contact-bg.jpg";
+
 export default function Contact() {
   return (
-    <section className="py-16 bg-gray-900 text-white">
+    <section
+      className="
+        py-10 md:py-12 text-white
+        bg-cover bg-center bg-no-repeat
+        bg-fixed
+        relative
+      "
+      style={{
+        backgroundImage: `
+          linear-gradient(rgba(17,24,39,0.55), rgba(17,24,39,0.55)),
+          url(${contactBg})
+        `,
+      }}
+    >
       <div className="max-w-7xl mx-auto px-4 text-center">
 
         {/* CONTENT */}
         <div data-aos="fade-up">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
             Ready to Power Your Project?
           </h2>
 
-          <p className="text-gray-300 max-w-2xl mx-auto mb-8">
+          <p className="text-gray-300 max-w-2xl mx-auto mb-5">
             Get in touch with our expert team to discuss your solar, electrical
             or energy efficiency requirements. We are ready to deliver reliable
             and sustainable solutions.
           </p>
 
-          {/* BUTTONS */}
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
+          {/* BUTTON */}
+          <div className="flex justify-center">
             <a
               href="tel:+919999999999"
-              className="px-8 py-3 bg-green-600 rounded-md font-medium
-                         hover:bg-white-700 transition"
+              className="
+                px-8 py-2.5 bg-green-600 rounded-md font-medium
+                hover:bg-green-700 transition
+              "
             >
               Call Us Now
             </a>
-
-           
           </div>
         </div>
 

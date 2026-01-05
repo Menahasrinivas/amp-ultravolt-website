@@ -61,10 +61,16 @@ export default function Projects() {
               />
 
               {/* OVERLAY */}
-              <div className="absolute inset-0 bg-black/50
-                              flex flex-col justify-end p-4
-                              opacity-0 group-hover:opacity-100
-                              transition duration-300">
+              <div
+                className="
+                  absolute inset-0
+                  bg-gradient-to-t from-black/70 via-black/30 to-transparent
+                  flex flex-col justify-end p-4
+                  opacity-100
+                  lg:opacity-0 lg:group-hover:opacity-100
+                  transition-opacity duration-300
+                "
+              >
                 <h3 className="text-white text-lg font-semibold">
                   {project.title}
                 </h3>
@@ -77,6 +83,9 @@ export default function Projects() {
         </div>
 
       </div>
+
+
+      
     </section>
   );
 }
