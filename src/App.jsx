@@ -9,7 +9,7 @@ import EpcSolar from "./pages/EPC";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SolarOM from "./pages/solarom";
+import SolarOperationManaement from "./pages/SolarOM";
 
 export default function App() {
 
@@ -28,7 +28,7 @@ export default function App() {
       <Route path="/company/key-management" element={<CompanyKeyManagement />} />
       <Route path="/company/company-software" element={<CompanySoftware />} />
       <Route path="/solar/epc" element={<EpcSolar />} />
-      <Route path="/solar/om" element={<SolarOM />} />
+      <Route path="/solar/om" element={<SolarOperationManaement />} />
     </Routes>
   );
 }

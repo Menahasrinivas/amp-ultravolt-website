@@ -9,7 +9,7 @@ const fadeUp = {
 };
 <Header />;
 
-export default function SolarOM() {
+export default function SolarOperationManaement() {
   return (
     <>
       {/* ================= SEO ================= */}
