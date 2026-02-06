@@ -38,7 +38,7 @@ export default function EpcSolar() {
       </section>
 
       {/* ================= EPC MASTER SECTION ================= */}
-      <section className="relative py-32 bg-linear-to-b from-[#f4f7fb] to-white overflow-hidden">
+      <section className="relative py-12 bg-linear-to-b from-[#f4f7fb] to-white overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(37,99,235,0.08),transparent_45%)]"></div>
 
         <div className="relative max-w-7xl mx-auto px-6">
@@ -202,7 +202,7 @@ export default function EpcSolar() {
             <h3 className="text-3xl font-semibold text-white mb-3">
               Electrical Inspection, Testing & Commissioning
             </h3>
-            <p className="text-gray-300 text-sm sm:text-base">
+            <p className="text-gray-300 text-sm sm:text-base  text-justify">
               High-voltage engineering expertise covering substations,
               transformers, protection systems and transmission infrastructure.
             </p>
@@ -327,7 +327,7 @@ export default function EpcSolar() {
       {/* ================= RELIABILITY STATEMENT ================= */}
       <section className="py-16 bg-slate-100" data-aos="fade-up">
         <div className="max-w-4xl mx-auto px-6 text-center">
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-gray-700  text-justify">
             AmpUltraVolt ensures reliability, risk-free yields, and long-term
             durability by deploying multi-system products that complement each
             other across the full lifecycle of Solar Power Plants.

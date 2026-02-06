@@ -179,11 +179,11 @@ export default function SolarOperationManaement() {
               <h3 className="text-xl font-semibold text-[#0b1220]">
                 Plant & Site Management
               </h3>
-              <p className="text-gray-600 text-md leading-relaxed">
+              <p className="text-gray-600 text-md leading-relaxed  text-justify">
                 Vegetation growth, soil erosion, drainage issues and structural
                 defects can severely impact plant performance and safety.
               </p>
-              <p className="text-gray-600 text-md leading-relaxed">
+              <p className="text-gray-600 text-md leading-relaxed  text-justify">
                 A proactive O&M team performs visual inspections and preventive
                 actions before seasonal risks cause irreversible damage.
               </p>
@@ -197,7 +197,7 @@ export default function SolarOperationManaement() {
                 <h2 className="text-3xl font-semibold text-[#0b1220] mb-2">
                   Plant Maintenance Scope
                 </h2>
-                <p className="text-gray-600 text-md max-w-2xl mx-auto">
+                <p className="text-gray-600 text-md max-w-2xl mx-auto  text-justify">
                   Structured maintenance strategies ensuring reliability,
                   performance and long-term asset protection.
                 </p>
@@ -271,12 +271,12 @@ export default function SolarOperationManaement() {
               <h3 className="text-xl font-semibold text-[#0b1220]">
                 Monitoring, Analytics & NOC
               </h3>
-              <p className="text-gray-600 text-md leading-relaxed">
+              <p className="text-gray-600 text-md leading-relaxed  text-justify">
                 AmpUltraVolt Engineers provides advanced monitoring using
                 solar-log data loggers from Germany, enabling real-time
                 performance tracking and diagnostics.
               </p>
-              <p className="text-gray-600 text-md leading-relaxed">
+              <p className="text-gray-600 text-md leading-relaxed  text-justify">
                 Our Network Operations Centre (NOC) ensures continuous
                 monitoring, predictive analytics, alarms, and uptime management
                 for utility-scale and rooftop solar plants.
@@ -306,7 +306,7 @@ export default function SolarOperationManaement() {
             <h2 className="text-3xl font-semibold text-[#0b1220] mb-4">
               Our Services Portfolio
             </h2>
-            <p className="text-gray-600 leading-relaxed text-md">
+            <p className="text-gray-600 leading-relaxed text-md  text-justify">
               Comprehensive preventive maintenance, monitoring, analytics and
               operational support designed to maximize uptime and protect solar
               asset performance.
@@ -338,7 +338,7 @@ export default function SolarOperationManaement() {
                     <h3 className="text-3xl font-semibold text-[#0b1220] mb-3">
                       Preventive Maintenance Packages
                     </h3>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    <p className="text-gray-600 text-sm leading-relaxed  text-justify">
                       Our preventive maintenance programs are structured to
                       enhance reliability, maximize energy yield, and safeguard
                       long-term solar asset performance through proactive
@@ -459,12 +459,12 @@ export default function SolarOperationManaement() {
               <h3 className="text-xl font-semibold text-[#0b1220]">
                 State-of-the-art Network Operations Centre (NOC)
               </h3>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed  text-justify">
                 To monitor operations and manage maintenance of solar rooftops
                 and utility-scale plants, AmpUltraVolt Engineers leverages
                 advanced Network Operations Centre capabilities.
               </p>
-              <p className="text-gray-600 text-sm leading-relaxed">
+              <p className="text-gray-600 text-sm leading-relaxed  text-justify">
                 Our centralized monitoring provides instant performance
                 insights, proactive alerts, and data-driven decision support —
                 ensuring optimal asset performance and business continuity.

@@ -30,12 +30,12 @@ export default function CompanySoftware() {
         <div className="absolute inset-0 bg-black/55"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex items-center justify-center h-full text-center px-6">
+        <div className="relative z-10 flex items-center justify-center h-full text-center px-6 ">
           <div>
-            <h1 className="text-4xl font-semibold text-white">
+            <h1 className="text-4xl font-semibold text-white ">
               Engineering Tools & Software
             </h1>
-            <p className="mt-3 text-gray-200 max-w-2xl mx-auto">
+            <p className="mt-3 text-gray-200 max-w-2xl mx-auto ">
               Advanced engineering platforms deployed for accuracy, compliance,
               and performance analysis
             </p>
@@ -43,7 +43,7 @@ export default function CompanySoftware() {
         </div>
       </section>
       {/* SOFTWARE SECTION – EPC STYLE */}
-      <section className="bg-white py-20 sm:py-24 lg:py-28">
+      <section className="bg-white pt-10 pb-20 sm:pt-12 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
           {/* SECTION INTRO */}
           <Motion.div
@@ -51,12 +51,12 @@ export default function CompanySoftware() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="text-center max-w-3xl mx-auto mb-16"
+            className="text-center max-w-3xl mx-auto mb-16 text-justify"
           >
             <h2 className="text-2xl sm:text-3xl font-semibold text-[#0b1220]">
               Engineering Tools & Platforms
             </h2>
-            <p className="mt-4 text-gray-600 leading-relaxed text-sm sm:text-base">
+            <p className="mt-4 text-gray-600 leading-relaxed text-sm sm:text-base  text-justify">
               Industry-standard engineering software deployed for EPC design,
               system reliability, safety compliance, and advanced power
               analysis.

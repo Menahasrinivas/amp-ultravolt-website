@@ -46,7 +46,7 @@ export default function CompanyAbout() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center"
+        className="max-w-6xl mx-auto px-6 py-12 grid md:grid-cols-2 gap-12 items-center"
       >
         <div>
           <h2 className="text-3xl font-semibold mb-6">Why We</h2>
@@ -76,7 +76,7 @@ export default function CompanyAbout() {
         viewport={{ once: true }}
         className="bg-gray-50 py-20 px-6"
       >
-        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+        <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center order-2 md:order-1">
           <img
             src="/images/beyondsolar.webp"
             alt="Wind Power Engineering"
@@ -84,18 +84,18 @@ export default function CompanyAbout() {
           />
 
           <div>
-            <h2 className="text-3xl font-semibold mb-6">
+            <h2 className="text-3xl font-semibold mb-6 order-1 md:order-2">
               Beyond Solar – Multi-Disciplinary Expertise
             </h2>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4 text-justify">
               Apart from Solar Power, AmpUltraVolt extends its engineering
               expertise across a wide spectrum of power and infrastructure
               domains, delivering integrated solutions that meet complex
               technical and operational requirements.
             </p>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4 text-justify">
               Our core competencies include Wind Power systems, Transmission
               Line execution, Sub-station Detailed Engineering, Power System
               Studies, and Insulation Coordination Studies, ensuring compliance
@@ -119,13 +119,13 @@ export default function CompanyAbout() {
             Engineering Experience That Delivers
           </h2>
 
-          <p className="text-gray-700 leading-relaxed">
+          <p className="text-gray-700 leading-relaxed text-justify ">
             Our team of well-experienced engineers, backed by years of industry
             expertise, gives us a distinct edge in consistently meeting and
             exceeding customer expectations across all project stages.
           </p>
 
-          <p className="text-gray-700 leading-relaxed mt-4">
+          <p className="text-gray-700 leading-relaxed mt-4  text-justify">
             From detailed engineering and system analysis to execution and
             long-term operations, our professionals ensure precision,
             reliability, and quality at every stage of the project lifecycle.
@@ -146,7 +146,7 @@ export default function CompanyAbout() {
             <h2 className="text-2xl sm:text-3xl font-semibold text-[#0b1220]">
               Our Core Services
             </h2>
-            <p className="mt-3 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+            <p className="mt-3 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base  text-justify">
               Integrated engineering and energy solutions delivered with
               precision and reliability.
             </p>

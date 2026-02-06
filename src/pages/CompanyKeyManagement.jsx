@@ -23,7 +23,7 @@ export default function CompanyKeyManagement() {
 
       {/* PAGE BANNER */}
       <section
-        className="relative h-[55vh] bg-center bg-cover"
+        className="relative h-[55vh]  bg-center bg-cover"
         style={{
           backgroundImage: "url('/banner/managementbanner.webp')",
         }}
@@ -50,11 +50,11 @@ export default function CompanyKeyManagement() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="max-w-6xl mx-auto px-6 py-24"
+        className="max-w-6xl mx-auto px-6 py-12"
       >
         <div className="grid md:grid-cols-3 gap-12 items-start">
           {/* IMAGE */}
-          <div className="md:col-span-1">
+          <div className="md:col-span-1 order-2 md:order-1">
             <div className="rounded-xl overflow-hidden shadow-md">
               <img
                 src="/images/ampceo.png"
@@ -65,10 +65,10 @@ export default function CompanyKeyManagement() {
           </div>
 
           {/* CONTENT */}
-          <div className="md:col-span-2">
+          <div className="md:col-span-2 justify-content-center order-1 md:order-2">
             <h2 className="text-2xl font-semibold mb-2">Vicky N. Pillai</h2>
 
-            <p className="text-gray-600 mb-4">
+            <p className="text-gray-600 mb-4 text-justify">
               B.E (EEE)., MBA (F&M)., CEA / CEM (BEE., MoP) & P.G Diploma in
               Electrical Safety
             </p>
@@ -77,7 +77,7 @@ export default function CompanyKeyManagement() {
               Executive Director
             </h3>
 
-            <p className="text-gray-700 leading-relaxed mb-4">
+            <p className="text-gray-700 leading-relaxed mb-4 text-justify">
               A dynamic professional with over 17 years of extensive experience
               in Electrical Equipment, EHV / HV / MV / LV systems, Operation &
               Maintenance, Erection, Testing, and Commissioning across India’s
