@@ -10,7 +10,6 @@ import EpcSolar from "./pages/EPC";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import SolarOM from "./pages/solarom";
-// vercel redeploy trigger
 
 export default function App() {
 
