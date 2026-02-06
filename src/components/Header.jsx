@@ -10,12 +10,13 @@ export default function Header() {
     <header className="w-full border-b bg-slate-50 relative z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
 
-        {/* LOGO */}
-        <img
-          src={logo}
-          alt="AMP Ultra Volt"
-          className="h-16 w-auto object-contain"
-        />
+       <Link to="/">
+  <img
+    src={logo}
+    alt="AMP Ultra Volt"
+    className="h-16 w-auto object-contain cursor-pointer"
+  />
+</Link>
 
         {/* DESKTOP MENU */}
         <nav className="hidden lg:flex gap-8 text-[15px] font-medium text-gray-800">
