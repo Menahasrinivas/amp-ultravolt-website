@@ -1,39 +1,34 @@
+import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
-import AOS from "aos";
 
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Aboutus from "./components/Aboutus";
-import Services from "./components/Services";
-import WhyChooseUs from "./components/WhyChooseUs";
-import Projects from "./components/Projects";
-import Stats from "./components/Stats";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import TopTextCarousel from "./components/TopTextCarousel";
+import Home from "./pages/Home";
+import CompanyAbout from "./pages/CompanyAbout";
+import CompanyKeyManagement from "./pages/CompanyKeyManagement";
+import CompanySoftware from "./pages/CompanySoftware";
+import EpcSolar from "./pages/EPC";
+import SolarOM from "./pages/solarom";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function App() {
+
   useEffect(() => {
     AOS.init({
-      duration: 1000,
+      duration: 700,
+      easing: "ease-out-cubic",
       once: true,
-      easing: "ease-in-out",
     });
   }, []);
 
   return (
-    <>
-  
-      <Header />
-        <TopTextCarousel />
-      <Hero />
-      <Aboutus />
-      <Services />
-      <WhyChooseUs />
-      <Projects />
-      <Stats />
-      <Contact />
-      <Footer />
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/company/about-us" element={<CompanyAbout />} />
+      <Route path="/company/key-management" element={<CompanyKeyManagement />} />
+      <Route path="/company/company-software" element={<CompanySoftware />} />
+      <Route path="/solar/epc" element={<EpcSolar />} />
+      <Route path="/solar/om" element={<SolarOM />} />
+    </Routes>
   );
 }

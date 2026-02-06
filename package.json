@@ -11,8 +11,11 @@
   },
   "dependencies": {
     "aos": "^2.3.4",
+    "framer-motion": "^12.31.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^7.13.0",
     "swiper": "^12.0.3"
   },
   "devDependencies": {
