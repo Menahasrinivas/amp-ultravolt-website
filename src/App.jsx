@@ -6,10 +6,10 @@ import CompanyAbout from "./pages/CompanyAbout";
 import CompanyKeyManagement from "./pages/CompanyKeyManagement";
 import CompanySoftware from "./pages/CompanySoftware";
 import EpcSolar from "./pages/EPC";
-import SolarOM from "./pages/solarom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+import SolarOM from "./pages/solarom";
 // vercel redeploy trigger
 
 export default function App() {
