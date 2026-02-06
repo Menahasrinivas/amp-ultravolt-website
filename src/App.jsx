@@ -10,6 +10,7 @@ import SolarOM from "./pages/solarom";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
+// vercel redeploy trigger
 
 export default function App() {
 

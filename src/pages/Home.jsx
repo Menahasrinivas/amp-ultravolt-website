@@ -11,6 +11,7 @@ import Stats from "../components/Stats";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import TopTextCarousel from "../components/TopTextCarousel";
+// vercel redeploy trigger
 
 export default function Home() {
   useEffect(() => {

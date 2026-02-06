@@ -44,7 +44,7 @@ export default function CompanySoftware() {
   </div>
 </section>
   {/* SOFTWARE SECTION – EPC STYLE */}
-      <section className="bg-[#f3f8f6] py-20 sm:py-24 lg:py-28">
+      <section className="bg-white py-20 sm:py-24 lg:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
           {/* SECTION INTRO */}
@@ -116,7 +116,7 @@ export default function CompanySoftware() {
             rounded-[28px]
             bg-[radial-gradient(120%_120%_at_50%_0%,#2f4f52_0%,#1f3438_45%,#17262a_100%)]
             text-white
-            shadow-[inset_0_1px_0_rgba(255,255,255,0.12),0_20px_60px_rgba(0,0,0,0.6)]
+            
             transition-all duration-500
             hover:-translate-y-2
           "
