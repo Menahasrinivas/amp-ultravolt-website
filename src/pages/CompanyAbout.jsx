@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-// vercel redeploy trigger
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -50,9 +50,7 @@ export default function CompanyAbout() {
         className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center"
       >
         <div>
-          <h2 className="text-3xl font-semibold mb-6">
-            Why We
-          </h2>
+          <h2 className="text-3xl font-semibold mb-6">Why We</h2>
           <h4 className="text-2xl font-semibold mb-6">
             End-to-End Alternative Energy Solutions
           </h4>
@@ -81,33 +79,30 @@ export default function CompanyAbout() {
       >
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <img
-            src="/images/windpower.webp"
+            src="/images/beyondsolar.webp"
             alt="Wind Power Engineering"
             className="rounded-xl shadow-lg"
           />
 
           <div>
-  <h2 className="text-3xl font-semibold mb-6">
-    Beyond Solar – Multi-Disciplinary Expertise
-  </h2>
+            <h2 className="text-3xl font-semibold mb-6">
+              Beyond Solar – Multi-Disciplinary Expertise
+            </h2>
 
-  <p className="text-gray-700 leading-relaxed mb-4">
-    Apart from Solar Power, AmpUltraVolt extends its engineering expertise
-    across a wide spectrum of power and infrastructure domains, delivering
-    integrated solutions that meet complex technical and operational
-    requirements.
-  </p>
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Apart from Solar Power, AmpUltraVolt extends its engineering
+              expertise across a wide spectrum of power and infrastructure
+              domains, delivering integrated solutions that meet complex
+              technical and operational requirements.
+            </p>
 
-  <p className="text-gray-700 leading-relaxed mb-4">
-    Our core competencies include Wind Power systems, Transmission Line
-    execution, Sub-station Detailed Engineering, Power System Studies, and
-    Insulation Coordination Studies, ensuring compliance with grid standards,
-    system reliability, and long-term performance.
-  </p>
-
- 
-</div>
-
+            <p className="text-gray-700 leading-relaxed mb-4">
+              Our core competencies include Wind Power systems, Transmission Line
+              execution, Sub-station Detailed Engineering, Power System Studies,
+              and Insulation Coordination Studies, ensuring compliance with grid
+              standards, system reliability, and long-term performance.
+            </p>
+          </div>
         </div>
       </motion.section>
 
@@ -123,136 +118,86 @@ export default function CompanyAbout() {
           <h2 className="text-3xl font-semibold mb-6">
             Engineering Experience That Delivers
           </h2>
+
           <p className="text-gray-700 leading-relaxed">
             Our team of well-experienced engineers, backed by years of industry
             expertise, gives us a distinct edge in consistently meeting and
-            exceeding customer expectations across all project stages.<br></br>
-       
-          
-From detailed engineering and system analysis to execution and long-term
-operations, our professionals ensure precision, reliability, and quality at
-every stage of the project lifecycle.
-   </p>
+            exceeding customer expectations across all project stages.
+          </p>
 
+          <p className="text-gray-700 leading-relaxed mt-4">
+            From detailed engineering and system analysis to execution and
+            long-term operations, our professionals ensure precision,
+            reliability, and quality at every stage of the project lifecycle.
+          </p>
         </div>
 
         <img
-          src="/images/engg-team.webp"
+          src="/images/engg-experience.webp"
           alt="Engineering Team"
           className="rounded-xl shadow-lg"
         />
       </motion.section>
 
-      {/* SERVICES GRID */}
-{/* OUR CORE SERVICES */}
-<section className="py-16 bg-[#f7faf9]">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+      {/* OUR CORE SERVICES */}
+      <section className="py-16 bg-[#f7faf9]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+          <div className="text-center mb-12">
+            <h2 className="text-2xl sm:text-3xl font-semibold text-[#0b1220]">
+              Our Core Services
+            </h2>
+            <p className="mt-3 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
+              Integrated engineering and energy solutions delivered with
+              precision and reliability.
+            </p>
+          </div>
 
-    {/* HEADING */}
-    <div className="text-center mb-12">
-      <h2 className="text-2xl sm:text-3xl font-semibold text-[#0b1220]">
-        Our Core Services
-      </h2>
-      <p className="mt-3 text-gray-600 max-w-2xl mx-auto text-sm sm:text-base">
-        Integrated engineering and energy solutions delivered with precision
-        and reliability.
-      </p>
-    </div>
-
-    {/* CONTENT GRID */}
-    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-
-      {/* LEFT IMAGE */}
-      <div className="flex justify-center">
-        <img
-          src="/images/core-services.webp"
-          alt="AmpUltraVolt Core Services"
-          className="w-[600px] max-w-full rounded-3xl shadow-lg object-cover"
-        />
-      </div>
-
-      {/* RIGHT CONTENT */}
-      <div className="space-y-6 sm:space-y-7">
-
-        {[
-          { title: "Solar Power", icon: "M12 2v2m0 16v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2m16 0h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41M12 6a6 6 0 100 12 6 6 0 000-12z" },
-          { title: "Wind Power", icon: "M12 3v9m0 0l4 2m-4-2l-4 2m4-2v9" },
-          { title: "Energy Audit", icon: "M9 17v-6a3 3 0 016 0v6m-6 0h6" },
-          { title: "ECM", icon: "M13 10V3L4 14h7v7l9-11h-7z" },
-          { title: "EPC", icon: "M9 12h6m-3-3v6m8 2a9 9 0 11-18 0 9 9 0 0118 0z" },
-          { title: "O & M", icon: "M12 6v6m0 4h.01" },
-          { title: "Transmission Lines", icon: "M3 7h18M3 12h18M3 17h18" },
-          { title: "HR Services", icon: "M12 12a4 4 0 100-8 4 4 0 000 8z" },
-        ].map((service, index) => (
-          <div
-            key={index}
-            className="group flex items-center gap-5"
-          >
-            {/* ICON */}
-            <div
-              className="
-                h-11 w-11 flex-shrink-0
-                rounded-xl
-                bg-blue-50
-                flex items-center justify-center
-                transition-colors duration-300
-                group-hover:bg-blue-600
-              "
-            >
-              <svg
-                className="
-                  h-5 w-5
-                  text-blue-600
-                  transition-colors duration-300
-                  group-hover:text-white
-                "
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                viewBox="0 0 24 24"
-              >
-                <path d={service.icon} />
-              </svg>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="flex justify-center">
+              <img
+                src="/images/core-services.webp"
+                alt="AmpUltraVolt Core Services"
+                className="w-600px max-w-full rounded-3xl shadow-lg object-cover"
+              />
             </div>
 
-            {/* TITLE */}
-            <div className="flex-1">
-              <h4
-                className="
-                  text-base sm:text-lg
-                  font-semibold
-                  text-[#0b1220]
-                  tracking-wide
-                  leading-snug
-                "
-              >
-                {service.title}
-              </h4>
+            <div className="space-y-6 sm:space-y-7">
+              {[
+                "Solar Power",
+                "Wind Power",
+                "Energy Audit",
+                "ECM",
+                "EPC",
+                "O & M",
+                "Transmission Lines",
+                "HR Services",
+              ].map((service, index) => (
+                <div key={index} className="group flex items-center gap-5">
+                  <div className="h-11 w-11 rounded-xl bg-blue-50 flex items-center justify-center group-hover:bg-blue-600 transition">
+                    <span className="text-blue-600 group-hover:text-white font-semibold">
+                      ✓
+                    </span>
+                  </div>
 
-              {/* ACCENT LINE */}
-              <div
-                className="
-                  mt-2 h-[2px] w-8
-                  bg-blue-600
-                  transition-all duration-300
-                  group-hover:w-24
-                "
-              ></div>
+                  <div className="flex-1">
+                    <h4 className="text-base sm:text-lg font-semibold text-[#0b1220]">
+                      {service}
+                    </h4>
+                    <div className="mt-2 h-2px w-8 bg-blue-600 group-hover:w-24 transition-all"></div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
-        ))}
+        </div>
+      </section>
 
-      </div>
-    </div>
-  </div>
-</section>
 
-      {/* OUR VALUES – STICKY BACKGROUND (TIGHT SPACING) */}
+
+      {/* OUR VALUES – STICKY BACKGROUND */}
 <section
   className="relative min-h-screen py-32 bg-fixed bg-center bg-cover"
-  style={{
-    backgroundImage: "url('/images/ourvalues.webp')",
-  }}
+  style={{ backgroundImage: "url('/images/ourvalues.webp')" }}
 >
   {/* Overlay */}
   <div className="absolute inset-0 bg-black/45"></div>
@@ -268,9 +213,10 @@ every stage of the project lifecycle.
       Our Values
     </h2>
 
+    {/* TIMELINE WRAPPER */}
     <div className="relative">
-      {/* Vertical Line */}
-      <div className="absolute left-6 top-0 h-full w-[2px] bg-white/30"></div>
+      {/* VERTICAL STICK */}
+      <div className="absolute left-6 top-0 bottom-0 w-[2px] bg-white/40"></div>
 
       {[
         {
@@ -295,10 +241,10 @@ every stage of the project lifecycle.
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: index * 0.12 }}
-          className="relative flex gap-6 mb-12 pl-16"
+          transition={{ delay: index * 0.15 }}
+          className="relative flex gap-6 mb-14 pl-16"
         >
-          {/* Dot */}
+          {/* DOT */}
           <div className="absolute left-3 top-2 w-4 h-4 rounded-full bg-blue-500"></div>
 
           <div>
@@ -314,8 +260,6 @@ every stage of the project lifecycle.
     </div>
   </motion.div>
 </section>
-
-
       <Footer />
     </>
   );

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-// vercel redeploy trigger
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -62,7 +62,7 @@ export default function CompanyKeyManagement() {
     <img
       src="/images/ampceo.png"
       alt="Vicky N. Pillai – Executive Director"
-      className="w-full h-[320px] object-cover"
+      className="w-full h-320px object-cover"
     />
   </div>
 </div>

@@ -2,15 +2,17 @@ import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-// vercel redeploy trigger
+
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6 } },
 };
+<Header />
 
 export default function SolarOM() {
   return (
+    
     <>
       {/* ================= SEO ================= */}
       <Helmet>
@@ -175,7 +177,7 @@ export default function SolarOM() {
       {/* IMAGE */}
       <div
         data-aos="fade-right"
-        className="h-[320px] sm:h-[360px] lg:h-[400px] overflow-hidden rounded-3xl shadow-lg"
+        className="h-320px sm:h-360px lg:h-400px overflow-hidden rounded-3xl shadow-lg"
       >
         <img
           src="/images/plant.webp"

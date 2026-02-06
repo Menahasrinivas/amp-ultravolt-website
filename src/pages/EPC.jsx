@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// vercel redeploy trigger
+
 export default function EpcSolar() {
   useEffect(() => {
     AOS.init({
@@ -39,7 +39,7 @@ export default function EpcSolar() {
       </section>
 
       {/* ================= EPC MASTER SECTION ================= */}
-      <section className="relative py-32 bg-gradient-to-b from-[#f4f7fb] to-white overflow-hidden">
+      <section className="relative py-32 bg-linear-to-b from-[#f4f7fb] to-white overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(37,99,235,0.08),transparent_45%)]"></div>
 
         <div className="relative max-w-7xl mx-auto px-6">
@@ -99,7 +99,7 @@ export default function EpcSolar() {
   {/* LEFT CONTENT */}
   <div data-aos="fade-right">
     <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-blue-600 mb-4">
-      <span className="w-6 h-[2px] bg-blue-600"></span>
+      <span className="w-6 h-2px bg-blue-600"></span>
       ENGINEERED RELIABILITY
     </span>
 
@@ -135,7 +135,7 @@ export default function EpcSolar() {
     "
   >
     {/* Accent */}
-    <div className="absolute -top-1 left-12 w-24 h-[3px] bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full"></div>
+    <div className="absolute -top-1 left-12 w-24 h-3px bg-linear-to-r from-blue-600 to-indigo-600 rounded-full"></div>
 
     <h4 className="font-semibold mb-10 text-lg text-[#0b1220]">
       Why Clients Trust AmpUltraVolt
@@ -210,115 +210,122 @@ export default function EpcSolar() {
       </p>
     </div>
 
-    {/* TIMELINE */}
-    <div className="relative">
+   {/* TIMELINE */}
+<div className="relative">
 
-      {/* CENTER LINE */}
-      <div className="
-        absolute left-1/2 top-0 h-full w-[3px]
-        bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600
-        -translate-x-1/2
-        hidden md:block
-      "></div>
-
-      {/* ITEMS */}
-      <div className="space-y-10 md:space-y-12">
-
-        {[
-          {
-            title: "EHV / HV Substations",
-            desc: "Inspection & commissioning of 22 / 400 kV and 220 / 6.6 kV substations",
-          },
-          {
-            title: "Medium Voltage Systems",
-            desc: "66 / 6.6 kV and 33 / 6.6 kV MV systems testing & maintenance",
-          },
-          {
-            title: "Power Transformers",
-            desc: "Testing & commissioning of 270–350 MVA transformers",
-          },
-          {
-            title: "Protection Equipment",
-            desc: "CT, CVT, PT, Circuit Breakers, Isolators & Lightning Arresters",
-          },
-          {
-            title: "Neutral & Grounding Systems",
-            desc: "NGT & NGR systems ensuring electrical safety & fault control",
-          },
-          {
-            title: "Transmission Accessories",
-            desc: "Wave traps and associated transmission protection equipment",
-          },
-        ].map((item, index) => {
-          const isLeft = index % 2 === 0;
-
-          return (
-            <div
-              key={index}
-              className={`relative flex items-center
-                ${isLeft ? "justify-start" : "justify-end"}
-              `}
-            >
-              {/* CONTENT */}
-              <div  data-aos="fade-up"
-                  data-aos-delay={index * 120}
-                className={`
-                  w-full md:w-[38%]
-                  px-2 
-                  text-white
-                  ${isLeft ? "md:pr-2 text-right" : "md:pl-2 text-left"}
-                `}
-              >
-                <h4 className="text-base font-semibold mb-1">
-                  {item.title}
-                </h4>
-                <p className="text-sm text-gray-200 leading-relaxed">
-                  {item.desc}
-                </p>
-              </div>
-
-              {/* CONNECTOR LINE */}
-              <div
-                className={`
-                  absolute top-1/2
-                  h-[1px] w-3 bg-blue-300 animate-glow
-                  ${isLeft ? "right-1/2 -translate-x-2" : "left-1/2 translate-x-2"}
-                  hidden md:block
-                `}
-              ></div>
-{/* CENTER DOT WITH GLOW */}
+  {/* CENTER LINE */}
+ 
 <div
-  className="
-    absolute left-1/2 top-1/2
-    -translate-x-1/2 -translate-y-1/2
+  className={`
+    absolute left-1/2 top-0 h-full w-[3px]
+    bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600
+    -translate-x-1/2
     hidden md:block
-  "
->
-  {/* Glow pulse */}
-  <div
-    className="
-      absolute inset-0
-      w-6 h-6 rounded-full
-      bg-blue-500/40
-      blur-xl
-      animate-ping
-    "
-  ></div>
+  `}
 
-  {/* Core dot */}
-  <div
-    className="
-      relative z-10
-      w-3 h-3 rounded-full
-      bg-blue-500
-      shadow-[0_0_12px_rgba(59,130,246,0.9)]
-    "
-  ></div>
-</div>
+></div>
 
-            </div>
-          );
-        })}
+  {/* ITEMS */}
+  <div className="space-y-10 md:space-y-12">
+
+    {[
+      {
+        title: "EHV / HV Substations",
+        desc: "Inspection & commissioning of 22 / 400 kV and 220 / 6.6 kV substations",
+      },
+      {
+        title: "Medium Voltage Systems",
+        desc: "66 / 6.6 kV and 33 / 6.6 kV MV systems testing & maintenance",
+      },
+      {
+        title: "Power Transformers",
+        desc: "Testing & commissioning of 270–350 MVA transformers",
+      },
+      {
+        title: "Protection Equipment",
+        desc: "CT, CVT, PT, Circuit Breakers, Isolators & Lightning Arresters",
+      },
+      {
+        title: "Neutral & Grounding Systems",
+        desc: "NGT & NGR systems ensuring electrical safety & fault control",
+      },
+      {
+        title: "Transmission Accessories",
+        desc: "Wave traps and associated transmission protection equipment",
+      },
+    ].map((item, index) => {
+      const isLeft = index % 2 === 0;
+
+      return (
+        <div
+          key={index}
+          className={`relative flex items-center ${
+            isLeft ? "justify-start" : "justify-end"
+          }`}
+        >
+          {/* CONTENT */}
+          <div
+            data-aos="fade-up"
+            data-aos-delay={index * 120}
+            className={`
+              w-full md:w-[38%]
+              px-2
+              text-white
+              ${isLeft ? "md:pr-2 text-right" : "md:pl-2 text-left"}
+            `}
+          >
+            <h4 className="text-base font-semibold mb-1">
+              {item.title}
+            </h4>
+            <p className="text-sm text-gray-200 leading-relaxed">
+              {item.desc}
+            </p>
+          </div>
+
+          {/* CONNECTOR LINE */}
+          <div
+  className={`
+    absolute inset-0
+    w-6 h-6 rounded-full
+    bg-blue-500/40
+    blur-xl
+    animate-ping
+  `}
+></div>
+        
+
+          {/* CENTER DOT WITH GLOW */}
+          <div
+            className="
+              absolute left-1/2 top-1/2
+              -translate-x-1/2 -translate-y-1/2
+              hidden md:block
+            "
+          >
+            {/* Glow */}
+            <div
+              className="
+                absolute inset-0
+                w-6 h-6 rounded-full
+                bg-blue-500/40
+                blur-xl
+                animate-ping
+              "
+            ></div>
+
+            {/* Core Dot */}
+            <div
+              className="
+                relative z-10
+                w-3 h-3 rounded-full
+                bg-blue-500
+                shadow-[0_0_12px_rgba(59,130,246,0.9)]
+              "
+            ></div>
+          </div>
+        </div>
+      );
+    })}
 
       </div>
     </div>
