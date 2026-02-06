@@ -1,8 +1,7 @@
-import { motion } from "framer-motion";
 import { Helmet } from "react-helmet";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-
+import { motion as Motion } from "framer-motion";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -42,7 +41,7 @@ export default function CompanyAbout() {
       </section>
 
       {/* INTRO SECTION */}
-      <motion.section
+      <Motion.section
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -67,10 +66,10 @@ export default function CompanyAbout() {
           alt="Solar Power Plant"
           className="rounded-xl shadow-lg"
         />
-      </motion.section>
+      </Motion.section>
 
       {/* SPECIALIZATION SECTION */}
-      <motion.section
+      <Motion.section
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -97,17 +96,18 @@ export default function CompanyAbout() {
             </p>
 
             <p className="text-gray-700 leading-relaxed mb-4">
-              Our core competencies include Wind Power systems, Transmission Line
-              execution, Sub-station Detailed Engineering, Power System Studies,
-              and Insulation Coordination Studies, ensuring compliance with grid
-              standards, system reliability, and long-term performance.
+              Our core competencies include Wind Power systems, Transmission
+              Line execution, Sub-station Detailed Engineering, Power System
+              Studies, and Insulation Coordination Studies, ensuring compliance
+              with grid standards, system reliability, and long-term
+              performance.
             </p>
           </div>
         </div>
-      </motion.section>
+      </Motion.section>
 
       {/* EXPERIENCE SECTION */}
-      <motion.section
+      <Motion.section
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
@@ -137,7 +137,7 @@ export default function CompanyAbout() {
           alt="Engineering Team"
           className="rounded-xl shadow-lg"
         />
-      </motion.section>
+      </Motion.section>
 
       {/* OUR CORE SERVICES */}
       <section className="py-16 bg-[#f7faf9]">
@@ -188,78 +188,78 @@ export default function CompanyAbout() {
                 </div>
               ))}
             </div>
+
+            {/* OUR VALUES – STICKY BACKGROUND (TIGHT SPACING) */}
+            <section
+              className="relative min-h-screen py-32 bg-fixed bg-center bg-cover"
+              style={{ backgroundImage: "url('/images/ourvalues.webp')" }}
+            >
+              {" "}
+              {/* Overlay */}
+              <div className="absolute inset-0 bg-black/45"></div>{" "}
+              <Motion.div
+                variants={fadeUp}
+                initial="hidden"
+                whileInView="visible"
+                viewport={{ once: true }}
+                className="relative z-10 max-w-6xl mx-auto px-6 text-white"
+              >
+                {" "}
+                <h2 className="text-3xl font-semibold mb-14 text-center">
+                  {" "}
+                  Our Values{" "}
+                </h2>{" "}
+                <div className="relative">
+                  {/* Vertical Line */}{" "}
+                  <div className="absolute left-6 top-0 h-full w-[2px] bg-white/30"></div>
+                  {[
+                    {
+                      title: "Integrity",
+                      desc: "We uphold transparency, honesty and ethical engineering practices in every project we execute.",
+                    },
+                    {
+                      title: "Commitment",
+                      desc: "We stay committed to our clients, timelines and quality benchmarks — without compromise.",
+                    },
+                    {
+                      title: "Passion",
+                      desc: "Our passion for engineering excellence drives innovation and sustainable energy solutions.",
+                    },
+                    {
+                      title: "Safety & Excellence",
+                      desc: "Safety is embedded in our culture while excellence defines our execution standards.",
+                    },
+                  ].map((item, index) => (
+                    <Motion.div
+                      key={item.title}
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.12 }}
+                      className="relative flex gap-6 mb-12 pl-16"
+                    >
+                      {" "}
+                      {/* Dot */}{" "}
+                      <div className="absolute left-3 top-2 w-4 h-4 rounded-full bg-blue-500"></div>
+                      <div>
+                        <h3 className="text-xl font-semibold mb-1">
+                          {" "}
+                          {item.title}
+                        </h3>{" "}
+                        <p className="text-gray-200 text-sm leading-relaxed max-w-lg">
+                          {" "}
+                          {item.desc}{" "}
+                        </p>{" "}
+                      </div>{" "}
+                    </Motion.div>
+                  ))}{" "}
+                </div>
+              </Motion.div>
+            </section>
           </div>
         </div>
       </section>
 
-
-
-      {/* OUR VALUES – STICKY BACKGROUND */}
-<section
-  className="relative min-h-screen py-32 bg-fixed bg-center bg-cover"
-  style={{ backgroundImage: "url('/images/ourvalues.webp')" }}
->
-  {/* Overlay */}
-  <div className="absolute inset-0 bg-black/45"></div>
-
-  <motion.div
-    variants={fadeUp}
-    initial="hidden"
-    whileInView="visible"
-    viewport={{ once: true }}
-    className="relative z-10 max-w-6xl mx-auto px-6 text-white"
-  >
-    <h2 className="text-3xl font-semibold mb-14 text-center">
-      Our Values
-    </h2>
-
-    {/* TIMELINE WRAPPER */}
-    <div className="relative">
-      {/* VERTICAL STICK */}
-      <div className="absolute left-6 top-0 bottom-0 w-[2px] bg-white/40"></div>
-
-      {[
-        {
-          title: "Integrity",
-          desc: "We uphold transparency, honesty and ethical engineering practices in every project we execute.",
-        },
-        {
-          title: "Commitment",
-          desc: "We stay committed to our clients, timelines and quality benchmarks — without compromise.",
-        },
-        {
-          title: "Passion",
-          desc: "Our passion for engineering excellence drives innovation and sustainable energy solutions.",
-        },
-        {
-          title: "Safety & Excellence",
-          desc: "Safety is embedded in our culture while excellence defines our execution standards.",
-        },
-      ].map((item, index) => (
-        <motion.div
-          key={item.title}
-          initial={{ opacity: 0, x: -30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: index * 0.15 }}
-          className="relative flex gap-6 mb-14 pl-16"
-        >
-          {/* DOT */}
-          <div className="absolute left-3 top-2 w-4 h-4 rounded-full bg-blue-500"></div>
-
-          <div>
-            <h3 className="text-xl font-semibold mb-1">
-              {item.title}
-            </h3>
-            <p className="text-gray-200 text-sm leading-relaxed max-w-lg">
-              {item.desc}
-            </p>
-          </div>
-        </motion.div>
-      ))}
-    </div>
-  </motion.div>
-</section>
       <Footer />
     </>
   );
