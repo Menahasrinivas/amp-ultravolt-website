@@ -188,9 +188,9 @@ export default function EpcSolar() {
         data-aos="fade-up"
         data-aos-duration="900"
         data-aos-offset="200"
-        className="relative min-h-[75vh] pt-16 pb-14 bg-center bg-cover"
+        className="relative min-h-[75vh] py-16 px-16 mx-w-7xl bg-center bg-cover"
         style={{
-          backgroundImage: "url('/images/epc-service.webp')",
+          backgroundImage: "url('/images/epc-service.webp')", marginLeft:"20px"
         }}
       >
         {/* Overlay */}

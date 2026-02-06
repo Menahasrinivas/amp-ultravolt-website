@@ -189,14 +189,15 @@ export default function CompanyAbout() {
               ))}
             </div>
 
+          </div>
             {/* OUR VALUES – STICKY BACKGROUND (TIGHT SPACING) */}
             <section
-              className="relative min-h-screen py-32 bg-fixed bg-center bg-cover"
-              style={{ backgroundImage: "url('/images/ourvalues.webp')" }}
+              className="relative min-h-screen mt-8 rounded-2xl py-32 bg-fixed bg-center bg-cover"
+              style={{ backgroundImage: "url('/images/ourvalues.webp')"}}
             >
               {" "}
               {/* Overlay */}
-              <div className="absolute inset-0 bg-black/45"></div>{" "}
+              <div className="absolute inset-0 bg-black/05"></div>{" "}
               <Motion.div
                 variants={fadeUp}
                 initial="hidden"
@@ -238,25 +239,20 @@ export default function CompanyAbout() {
                       transition={{ delay: index * 0.12 }}
                       className="relative flex gap-6 mb-12 pl-16"
                     >
-                      {" "}
-                      {/* Dot */}{" "}
                       <div className="absolute left-3 top-2 w-4 h-4 rounded-full bg-blue-500"></div>
                       <div>
                         <h3 className="text-xl font-semibold mb-1">
-                          {" "}
                           {item.title}
-                        </h3>{" "}
+                        </h3>
                         <p className="text-gray-200 text-sm leading-relaxed max-w-lg">
-                          {" "}
-                          {item.desc}{" "}
-                        </p>{" "}
-                      </div>{" "}
+                          {item.desc}
+                        </p>
+                      </div>
                     </Motion.div>
-                  ))}{" "}
+                  ))}
                 </div>
               </Motion.div>
             </section>
-          </div>
         </div>
       </section>
 
