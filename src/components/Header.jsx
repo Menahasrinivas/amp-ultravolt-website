@@ -120,7 +120,7 @@ export default function Header() {
         </Link>
 
         <Link
-          to="/energy-audit/electrical-fire-safety"
+          to="/energy-audit/safety-audit"
           className="block px-5 py-3 hover:bg-white/10"
         >
           Electrical / Fire Safety Audit
