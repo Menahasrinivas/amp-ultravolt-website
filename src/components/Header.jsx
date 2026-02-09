@@ -153,8 +153,8 @@ export default function Header() {
 
           <a href="#" className="hover:text-red-600">Projects</a>
           <a href="#" className="hover:text-red-600">HR</a>
-          <a href="/gallery" className="hover:text-red-600">Gallery</a>
-          <a href="/contact" className="hover:text-red-600">Locate Us</a>
+          <Link to="/gallery" className="hover:text-red-600">Gallery</Link>
+          <Link to="/contact" className="hover:text-red-600">Locate Us</Link>
         </nav> {/* ✅ NAV CLOSED PROPERLY */}
 
         {/* HAMBURGER */}
@@ -292,7 +292,7 @@ export default function Header() {
       </Link>
 
       <Link
-        to="/energy-audit/electrical-fire-safety"
+        to="/energy-audit/safety-audit"
         onClick={() => {
           setDropdown(null);
           setOpen(false);
