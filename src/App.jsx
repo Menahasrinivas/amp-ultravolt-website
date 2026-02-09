@@ -9,7 +9,7 @@ import CompanySoftware from "./pages/CompanySoftware";
 import EpcSolar from "./pages/EPC";
 import SolarOperationManaement from "./pages/SolarOM";
 
-import Intro from "./pages/energyaudit/Intro";
+import Intro from "./pages/enery_audit/Intro";
 
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
@@ -18,6 +18,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
+import SafetyAudit from "./pages/enery_audit/SA";
+import EcmWcmActivities from "./pages/enery_audit/EcmWcmActivities";
+import WaterConservationAudit from "./pages/enery_audit/WaterConservationAudit";
+import ThermographyAudit from "./pages/enery_audit/ThermographyAudit";
 
 export default function App() {
   useEffect(() => {
