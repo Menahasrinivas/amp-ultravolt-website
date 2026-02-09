@@ -11,8 +11,8 @@ import SolarOperationManaement from "./pages/SolarOM";
 
 import Intro from "./pages/enery_audit/Intro";
 
-import Gallery from "./pages/Gallery";
-import Contact from "./pages/Contact";
+import GalleryImages from "./pages/Gallery";
+import ContactInfo from "./pages/Contact";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -66,8 +66,8 @@ export default function App() {
       />
 
       {/* OTHERS */}
-      <Route path="/gallery" element={<Gallery />} />
-      <Route path="/contact" element={<Contact />} />
+      <Route path="/gallery" element={<GalleryImages />} />
+      <Route path="/contact" element={<ContactInfo />} />
     </Routes>
   );
 }
