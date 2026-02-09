@@ -9,17 +9,18 @@ import CompanySoftware from "./pages/CompanySoftware";
 import EpcSolar from "./pages/EPC";
 import SolarOperationManaement from "./pages/SolarOM";
 
-import Intro from "./pages/energy-audit/Intro";
-import EcmWcmActivities from "./pages/energy-audit/EcmWcmActivities";
-import WaterConservationAudit from "./pages/energy-audit/WaterConservationAudit";
-import ThermographyAudit from "./pages/energy-audit/ThermographyAudit";
+import Intro from "./pages/energyaudit/Intro";
 
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import SafetyAudit from "./pages/energy-audit/safetyaudit";
+
+import SafetyAudit from "./pages/energyaudit/safetyaudit";
+import EcmWcmActivities from "./pages/energyAudit/EcmWcmActivities";
+import WaterConservationAudit from "./pages/energyAudit/WaterConservationAudit";
+import ThermographyAudit from "./pages/energyAudit/ThermographyAudit";
 
 export default function App() {
   useEffect(() => {
