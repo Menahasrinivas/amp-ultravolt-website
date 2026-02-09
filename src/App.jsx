@@ -17,7 +17,7 @@ import Contact from "./pages/Contact";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import SafetyAudit from "./pages/energyaudit/safetyaudit";
+import SafetyAudit from "./pages/energyAudit/safetyaudit";
 import EcmWcmActivities from "./pages/energyAudit/EcmWcmActivities";
 import WaterConservationAudit from "./pages/energyAudit/WaterConservationAudit";
 import ThermographyAudit from "./pages/energyAudit/ThermographyAudit";
