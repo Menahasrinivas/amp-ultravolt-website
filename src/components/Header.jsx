@@ -292,7 +292,7 @@ export default function Header() {
       </Link>
 
       <Link
-        to="/energy-audit/safetyaudit"
+        to="/energy-audit/electrical-fire-safety"
         onClick={() => {
           setDropdown(null);
           setOpen(false);

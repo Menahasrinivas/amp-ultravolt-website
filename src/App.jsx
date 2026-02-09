@@ -7,15 +7,17 @@ import CompanyKeyManagement from "./pages/CompanyKeyManagement";
 import CompanySoftware from "./pages/CompanySoftware";
 
 import EpcSolar from "./pages/EPC";
-import SolarOperationManaement from "./pages/SolarOM";
+import SolarOperationManagement from "./pages/SolarOM";
 
 import Intro from "./pages/energy-audit/Intro";
-import SafetyAudit from "./pages/energy-audit/safetyaudit";
+import Safety from "./pages/energy-audit/safetyaudit";
 import EcmWcmActivities from "./pages/energy-audit/EcmWcmActivities";
 import WaterConservationAudit from "./pages/energy-audit/WaterConservationAudit";
-import ThermographyAudit from  "./pages/energy-audit/ThermographyAudit";  
+import ThermographyAudit from "./pages/energy-audit/ThermographyAudit";
+
 import Gallery from "./pages/Gallery";
 import Contact from "./pages/Contact";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -40,28 +42,30 @@ export default function App() {
 
       {/* SOLAR */}
       <Route path="/solar/epc" element={<EpcSolar />} />
-      <Route path="/solar/om" element={<SolarOperationManaement />} />
+      <Route path="/solar/om" element={<SolarOperationManagement />} />
 
       {/* ENERGY AUDIT */}
       <Route path="/energy-audit/intro" element={<Intro />} />
       <Route
         path="/energy-audit/electrical-fire-safety"
-        element={<SafetyAudit />}
+        element={<Safety />}
       />
       <Route
         path="/energy-audit/ecm-wcm"
         element={<EcmWcmActivities />}
       />
-        <Route
+      <Route
         path="/energy-audit/water-conservation"
         element={<WaterConservationAudit />}
       />
       <Route
         path="/energy-audit/thermography"
-        element={<ThermographyAudit />}/>
-        <Route path="/gallery" element={<Gallery />} />
-      
-     <Route path="/contact" element={<Contact />} />
+        element={<ThermographyAudit />}
+      />
+
+      {/* OTHERS */}
+      <Route path="/gallery" element={<Gallery />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }

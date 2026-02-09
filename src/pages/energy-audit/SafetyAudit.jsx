@@ -1,17 +1,11 @@
-import { Helmet } from "react-helmet";
+
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 
 export default function SafetyAudit() {
   return (
     <>
-     <Helmet>
-  <title>Energy Audit Services | AmpUltraVolt Engineers Pvt Ltd</title>
-  <meta
-    name="description"
-    content="AmpUltraVolt Engineers Pvt Ltd offers comprehensive Energy Audit services including electrical system analysis, thermography, power quality assessment, demand management and energy conservation solutions for commercial, residential, data center and industrial facilities."
-  />
-</Helmet>
+     
 
       <Header />
 
