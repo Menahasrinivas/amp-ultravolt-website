@@ -17,7 +17,7 @@ export default function Footer() {
           <h3 className="text-lg font-semibold text-slate-900 mb-3">
             AMP Ultra Volt Engineers
           </h3>
-          <p className="text-sm leading-relaxed">
+          <p className="text-sm leading-relaxed text-justify">
             A reputed end-to-end EPC service provider delivering reliable,
             sustainable and cost-effective solar and electrical solutions.
           </p>

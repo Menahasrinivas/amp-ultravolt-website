@@ -5,14 +5,21 @@ import Home from "./pages/Home";
 import CompanyAbout from "./pages/CompanyAbout";
 import CompanyKeyManagement from "./pages/CompanyKeyManagement";
 import CompanySoftware from "./pages/CompanySoftware";
-import EpcSolar from "./pages/EPC";
 
-import AOS from "aos";
-import "aos/dist/aos.css";
+import EpcSolar from "./pages/EPC";
 import SolarOperationManaement from "./pages/SolarOM";
 
-export default function App() {
+import Intro from "./pages/energy-audit/Intro";
+import SafetyAudit from "./pages/energy-audit/safetyaudit";
+import EcmWcmActivities from "./pages/energy-audit/EcmWcmActivities";
+import WaterConservationAudit from "./pages/energy-audit/WaterConservationAudit";
+import ThermographyAudit from  "./pages/energy-audit/ThermographyAudit";  
+import Gallery from "./pages/Gallery";
+import Contact from "./pages/Contact";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+export default function App() {
   useEffect(() => {
     AOS.init({
       duration: 700,
@@ -23,12 +30,38 @@ export default function App() {
 
   return (
     <Routes>
+      {/* HOME */}
       <Route path="/" element={<Home />} />
+
+      {/* COMPANY */}
       <Route path="/company/about-us" element={<CompanyAbout />} />
       <Route path="/company/key-management" element={<CompanyKeyManagement />} />
       <Route path="/company/company-software" element={<CompanySoftware />} />
+
+      {/* SOLAR */}
       <Route path="/solar/epc" element={<EpcSolar />} />
       <Route path="/solar/om" element={<SolarOperationManaement />} />
+
+      {/* ENERGY AUDIT */}
+      <Route path="/energy-audit/intro" element={<Intro />} />
+      <Route
+        path="/energy-audit/electrical-fire-safety"
+        element={<SafetyAudit />}
+      />
+      <Route
+        path="/energy-audit/ecm-wcm"
+        element={<EcmWcmActivities />}
+      />
+        <Route
+        path="/energy-audit/water-conservation"
+        element={<WaterConservationAudit />}
+      />
+      <Route
+        path="/energy-audit/thermography"
+        element={<ThermographyAudit />}/>
+        <Route path="/gallery" element={<Gallery />} />
+      
+     <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }

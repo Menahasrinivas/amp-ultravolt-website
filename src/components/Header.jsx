@@ -96,44 +96,65 @@ export default function Header() {
   )}
 </div>
 
-          {/* ENERGY */}
-          <a href="#" className="hover:text-red-600 transition">
-            Energy Audit
-          </a>
+         {/* ENERGY AUDIT */}
+<div
+  className="relative"
+  onMouseEnter={() => setDropdown("energyAudit")}
+  onMouseLeave={() => setDropdown(null)}
+>
+  <span className="cursor-pointer hover:text-red-600 transition select-none">
+    Energy Audit ▾
+  </span>
 
-          {/* SERVICES */}
-          <div
-            className="relative"
-            onMouseEnter={() => setDropdown("services")}
-            onMouseLeave={() => setDropdown(null)}
-          >
-            <span className="cursor-pointer hover:text-red-600 select-none">
-              Services ▾
-            </span>
+  {dropdown === "energyAudit" && (
+    <div className="absolute left-0 top-full pt-2">
+      {/* Hover bridge */}
+      <div className="h-2"></div>
 
-            {dropdown === "services" && (
-              <div className="absolute left-0 top-full pt-2">
-                <div className="h-2"></div>
+      <div className="w-64 rounded-xl bg-[#0b1220] text-white shadow-xl">
+        <Link
+          to="/energy-audit/intro"
+          className="block px-5 py-3 hover:bg-white/10"
+        >
+          Energy Audit Intro
+        </Link>
 
-                <div className="w-56 rounded-xl bg-[#0b1220] text-white shadow-xl">
-                  <a className="block px-5 py-3 hover:bg-white/10" href="#">
-                    EPC Services
-                  </a>
-                  <a className="block px-5 py-3 hover:bg-white/10" href="#">
-                    O & M Services
-                  </a>
-                  <a className="block px-5 py-3 hover:bg-white/10" href="#">
-                    Consultation
-                  </a>
-                </div>
-              </div>
-            )}
-          </div>
+        <Link
+          to="/energy-audit/electrical-fire-safety"
+          className="block px-5 py-3 hover:bg-white/10"
+        >
+          Electrical / Fire Safety Audit
+        </Link>
+
+        <Link
+          to="/energy-audit/water-conservation"
+          className="block px-5 py-3 hover:bg-white/10"
+        >
+          Water Conservation Audit
+        </Link>
+
+        <Link
+          to="/energy-audit/thermography"
+          className="block px-5 py-3 hover:bg-white/10"
+        >
+          Thermography Audit
+        </Link>
+
+        <Link
+          to="/energy-audit/ecm-wcm"
+          className="block px-5 py-3 hover:bg-white/10"
+        >
+          ECM / WCM Activities
+        </Link>
+      </div>
+    </div>
+  )}
+</div>
 
           <a href="#" className="hover:text-red-600">Projects</a>
           <a href="#" className="hover:text-red-600">HR</a>
-          <a href="#" className="hover:text-red-600">Gallery</a>
-          <a href="#" className="hover:text-red-600">Locate Us</a>
+          <a href="/gallery" className="hover:text-red-600">Gallery</a>
+          <a href="/contact" className="hover:text-red-600">Locate Us</a>
         </nav> {/* ✅ NAV CLOSED PROPERLY */}
 
         {/* HAMBURGER */}
@@ -243,14 +264,88 @@ export default function Header() {
         )}
       </li>
 
+{/* ENERGY AUDIT */}
+<li>
+  <button
+    onClick={() =>
+      setDropdown(dropdown === "energy" ? null : "energy")
+    }
+    className="w-full text-left px-3 py-2 rounded-md
+    transition-all duration-300
+    hover:bg-white/20 hover:text-yellow-300"
+  >
+    Energy Audit ▾
+  </button>
+
+  {dropdown === "energy" && (
+    <div className="ml-4 mt-2 space-y-2 text-sm">
+
+      <Link
+        to="/energy-audit/intro"
+        onClick={() => {
+          setDropdown(null);
+          setOpen(false);
+        }}
+        className="block px-3 py-2 hover:text-yellow-300"
+      >
+        Energy Audit Intro
+      </Link>
+
+      <Link
+        to="/energy-audit/safetyaudit"
+        onClick={() => {
+          setDropdown(null);
+          setOpen(false);
+        }}
+        className="block px-3 py-2 hover:text-yellow-300"
+      >
+        Electrical / Fire Safety Audit
+      </Link>
+
+      <Link
+        to="/energy-audit/water-conservation"
+        onClick={() => {
+          setDropdown(null);
+          setOpen(false);
+        }}
+        className="block px-3 py-2 hover:text-yellow-300"
+      >
+        Water Conservation Audit
+      </Link>
+
+      <Link
+        to="/energy-audit/thermography"
+        onClick={() => {
+          setDropdown(null);
+          setOpen(false);
+        }}
+        className="block px-3 py-2 hover:text-yellow-300"
+      >
+        Thermography Audit
+      </Link>
+
+      <Link
+        to="/energy-audit/ecm-wcm"
+        onClick={() => {
+          setDropdown(null);
+          setOpen(false);
+        }}
+        className="block px-3 py-2 hover:text-yellow-300"
+      >
+        ECM / WCM Activities
+      </Link>
+
+    </div>
+  )}
+</li>
       {/* NORMAL LINKS */}
       {[
-        { name: "Energy Audit", path: "/energy-audit" },
+        
         { name: "Services", path: "/services" },
         { name: "Projects", path: "/projects" },
         { name: "HR", path: "/hr" },
         { name: "Gallery", path: "/gallery" },
-        { name: "Locate Us", path: "/contact" },
+      { name: "Locate Us", path: "/contact" },
       ].map((item) => (
         <li key={item.name}>
           <Link

@@ -68,7 +68,7 @@ export default function CompanyKeyManagement() {
           <div className="md:col-span-2 justify-content-center order-1 md:order-2">
             <h2 className="text-2xl font-semibold mb-2">Vicky N. Pillai</h2>
 
-            <p className="text-gray-600 mb-4 text-justify">
+            <p className="text-gray-600 mb-4 text-left md:text-justify">
               B.E (EEE)., MBA (F&M)., CEA / CEM (BEE., MoP) & P.G Diploma in
               Electrical Safety
             </p>
@@ -77,14 +77,14 @@ export default function CompanyKeyManagement() {
               Executive Director
             </h3>
 
-            <p className="text-gray-700 leading-relaxed mb-4 text-justify">
+            <p className="text-gray-700 leading-relaxed mb-4 text-left md:text-justify">
               A dynamic professional with over 17 years of extensive experience
               in Electrical Equipment, EHV / HV / MV / LV systems, Operation &
               Maintenance, Erection, Testing, and Commissioning across India’s
               prominent companies and multinational organizations.
             </p>
 
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-left md:text-justify">
               His leadership and technical expertise play a pivotal role in
               driving AmpUltraVolt’s commitment to safety, quality, and
               operational excellence across all engineering and EPC projects.
