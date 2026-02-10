@@ -67,7 +67,7 @@ export default function Hero() {
 
           <div className="mt-8 flex justify-center">
   <Link
-    href="#contact"
+    to="/contact"
     className="
       px-8 py-3
       bg-green-600
