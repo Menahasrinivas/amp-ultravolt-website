@@ -286,12 +286,12 @@ export default function SolarOperationManaement() {
             {/* IMAGE */}
             <div
               data-aos="fade-left"
-              className="h-[320px] sm:h-[360px] lg:h-[400px] overflow-hidden rounded-3xl shadow-lg"
+              className="h-[240px] sm:h-[280px] lg:h-[320px] overflow-hidden rounded-3xl shadow-lg"
             >
               <img
                 src="/images/epc-testing.webp"
                 alt="Solar Monitoring"
-                className="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+                className="w-full h-460px object-cover transition-transform duration-700 hover:scale-110"
               />
             </div>
           </div>
