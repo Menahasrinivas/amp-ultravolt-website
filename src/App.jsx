@@ -5,23 +5,27 @@ import Home from "./pages/Home";
 import CompanyAbout from "./pages/CompanyAbout";
 import CompanyKeyManagement from "./pages/CompanyKeyManagement";
 import CompanySoftware from "./pages/CompanySoftware";
-
 import EpcSolar from "./pages/EPC";
 import SolarOperationManaement from "./pages/SolarOM";
-
 import Intro from "./pages/enery_audit/Intro";
-
 import GalleryImages from "./pages/Gallery";
 import ContactInfo from "./pages/Contact";
-
-import AOS from "aos";
-import "aos/dist/aos.css";
-
-
 import SafetyAudit from "./pages/enery_audit/SA";
 import EcmWcmActivities from "./pages/enery_audit/EcmWcmActivities";
 import WaterConservationAudit from "./pages/enery_audit/WaterConservationAudit";
 import ThermographyAudit from "./pages/enery_audit/ThermographyAudit";
+import ProjectsAmp from "./pages/Projects";
+import HrInitiative from "./pages/hr/HrInitiative";
+import TrainingAmp from "./pages/hr/training";
+import CareersAmp from "./pages/hr/careers";
+import EngineeringServicesAmp from "./pages/services/EngineeringServices";
+import RenewablePowerAmp from "./pages/services/RenewablePower";
+import SpecializedStudiesAmp from "./pages/services/SpecializedStudies";
+import WhatsAppFloat from "./components/WhatsAppFloat";
+import ScrollToTopMenu from "./components/ScrollToTop";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 export default function App() {
   useEffect(() => {
@@ -32,8 +36,12 @@ export default function App() {
     });
   }, []);
 
-  return (
+return (
+  <>
+   <ScrollToTopMenu />
     <Routes>
+
+     
       {/* HOME */}
       <Route path="/" element={<Home />} />
 
@@ -48,14 +56,8 @@ export default function App() {
 
       {/* ENERGY AUDIT */}
       <Route path="/energy-audit/intro" element={<Intro />} />
-      <Route
-        path="/energy-audit/safety-audit"
-        element={<SafetyAudit />}
-      />
-      <Route
-        path="/energy-audit/ecm-wcm"
-        element={<EcmWcmActivities />}
-      />
+      <Route path="/energy-audit/safety-audit" element={<SafetyAudit />} />
+      <Route path="/energy-audit/ecm-wcm" element={<EcmWcmActivities />} />
       <Route
         path="/energy-audit/water-conservation"
         element={<WaterConservationAudit />}
@@ -65,9 +67,32 @@ export default function App() {
         element={<ThermographyAudit />}
       />
 
+      {/* SERVICES */}
+      <Route path="/services/engineering" element={<EngineeringServicesAmp />} />
+      <Route
+        path="/services/renewable-power"
+        element={<RenewablePowerAmp />}
+      />
+      <Route
+        path="/services/specialized-studies"
+        element={<SpecializedStudiesAmp />}
+      />
+
+      {/* PROJECTS */}
+      <Route path="/projects" element={<ProjectsAmp />} />
+
+      {/* HR */}
+      <Route path="/hr/initiatives" element={<HrInitiative />} />
+      <Route path="/hr/training" element={<TrainingAmp />} />
+      <Route path="/hr/careers" element={<CareersAmp />} />
+
       {/* OTHERS */}
       <Route path="/gallery" element={<GalleryImages />} />
       <Route path="/contact" element={<ContactInfo />} />
     </Routes>
-  );
+
+    {/* ✅ MOBILE WHATSAPP FLOAT */}
+    <WhatsAppFloat />
+  </>
+);
 }

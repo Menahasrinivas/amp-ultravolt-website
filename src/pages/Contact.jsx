@@ -16,7 +16,7 @@ export default function Contact() {
       <Header />
 
       {/* ================= PAGE BANNER ================= */}
-      <section className="relative h-[50vh]">
+      <section className="relative h-[55vh]">
         <img
           src="/banner/contact.webp"
           alt="Contact AmpUltraVolt"
@@ -36,25 +36,44 @@ export default function Contact() {
       </section>
 
       {/* ================= CONTACT SECTION ================= */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-start">
+      
 
-          {/* LEFT – ADDRESS */}
-          <div data-aos="fade-right">
-            <h2 className="text-3xl font-semibold text-[#0b1220] mb-6">
-              Registered Office
+ <section className="bg-blue-50 py-16">
+        <div className="max-w-7xl mx-auto px-4 grid md:grid-cols-2 gap-10">
+
+          {/* LEFT INFO */}
+          <div className="bg-white rounded-2xl shadow-md p-6 md:p-8">
+            <h2 className="text-2xl md:text-3xl font-semibold text-black-200 mb-6">
+              Locate Us
             </h2>
 
-            <div className="bg-[#f7faf9] rounded-2xl p-8 shadow-md">
-              <p className="text-gray-700 leading-relaxed text-sm">
+            <div className="space-y-5 text-gray-700">
+              <div>
+                <h3 className="font-semibold">📍 Office Address</h3>
+                 <p className="text-gray-700 leading-relaxed text-sm">
                 <strong>Regd. Off.:</strong><br />
                 #W339, 19th Street,<br />
                 Anna Nagar West Extension,<br />
                 Chennai – 600101.
               </p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">📞 Call Us</h3>
+                <p>9876543210</p>
+              </div>
+
+              <div>
+                <h3 className="font-semibold">📧 Email</h3>
+                <a
+                  href="mailto:technicalengineersmd@gmail.com"
+                  className="underline"
+                >
+                 hr@AmpUltraVolt.com
+                </a>
+              </div>
             </div>
           </div>
-
          {/* RIGHT – ENQUIRY FORM */}
 <div data-aos="fade-left">
   <h2 className="text-3xl font-semibold text-[#0b1220] mb-6">

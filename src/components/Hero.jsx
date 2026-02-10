@@ -6,6 +6,7 @@ import banner1 from "../assets/banner4.jpg";
 import banner2 from "../assets/bannerimg3.jpg";
 import banner3 from "../assets/banner7.jpg";
 import banner4 from "../assets/banner2.jpg";
+import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
@@ -65,7 +66,7 @@ export default function Hero() {
           </p>
 
           <div className="mt-8 flex justify-center">
-  <a
+  <Link
     href="#contact"
     className="
       px-8 py-3
@@ -78,7 +79,7 @@ export default function Hero() {
     "
   >
     Connect With Us
-  </a>
+  </Link>
 </div>
         </div>
       </div>
