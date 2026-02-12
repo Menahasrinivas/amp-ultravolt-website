@@ -15,7 +15,7 @@ export default function ThermographyAudit() {
       </Helmet>
 
       <Header />
-
+ <div className="overflow-x-hidden">
       {/* ================= PAGE BANNER ================= */}
       <section className="relative h-[55vh]">
         <img
@@ -303,6 +303,7 @@ export default function ThermographyAudit() {
   </div>
 </section>
       <Footer />
+      </div>
     </>
   );
 }

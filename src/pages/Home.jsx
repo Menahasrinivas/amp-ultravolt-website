@@ -25,6 +25,7 @@ export default function Home() {
   return (
     <>
       <Header />
+       <div className="overflow-x-hidden">
       <TopTextCarousel />
       <Hero />
       <Aboutus />
@@ -34,6 +35,7 @@ export default function Home() {
       <Stats />
       <Contact />
       <Footer />
+      </div>
       
     </>
   );

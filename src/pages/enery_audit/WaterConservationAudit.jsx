@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 
 export default function WaterConservationAudit() {
   return (
+   
     <>
       <Helmet>
         <title>Water Conservation Audit | AmpUltraVolt Engineers Pvt Ltd</title>
@@ -14,9 +15,9 @@ export default function WaterConservationAudit() {
       </Helmet>
 
       <Header />
-
+ <div className="overflow-x-hidden">
       {/* ================= PAGE BANNER ================= */}
-      <section className="relative h-[55vh]">
+      <section className="relative min-h-[55vh]">
         <img
           src="/banner/water-audit.webp"
           alt="Water Conservation Audit"
@@ -211,6 +212,7 @@ export default function WaterConservationAudit() {
       </section>
 
       <Footer />
+      </div>
     </>
   );
 }

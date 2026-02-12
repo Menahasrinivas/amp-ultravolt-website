@@ -1,18 +1,18 @@
-import { Helmet } from "react-helmet";
+
+import { useState, useEffect } from "react";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export default function Projects() {
+
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  useEffect(() => {
+    document.title = "Projects | AmpUltraVolt Engineers Pvt Ltd";
+  }, []);
   return (
     <>
-      <Helmet>
-        <title>Projects | AmpUltraVolt Engineers Pvt Ltd</title>
-        <meta
-          name="description"
-          content="AmpUltraVolt projects span Solar Power, Wind Power, Energy Audits, EPC, O&M, Transmission Lines and HR initiatives."
-        />
-      </Helmet>
-
+      
       <Header />
 
       {/* ================= PAGE BANNER ================= */}
@@ -169,6 +169,112 @@ export default function Projects() {
 
   </div>
 </section>
+   {/* ================= CURRENT PROJECTS ================= */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2
+            data-aos="fade-up"
+            className="text-3xl font-semibold text-center text-[#0b1220] mb-14"
+          >
+            Current Projects
+          </h2>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            {[
+              {
+                title: "Tower Material Shifting & Ground Assembly Work",
+                desc: "Tower no 14/0 (DC+03) Tower material shifting and ground assembly work in progress",
+                img: "/gallery/project-img1.webp",
+              },
+              {
+                title: "Transmission Tower Erection – Tightening Pending",
+                desc: "Loc no 15/0 DC+6 tower erection complete tightening pending",
+                img: "/gallery/project-img2.webp",
+              },
+              {
+                title: "Transmission Line Tower Erection Completed",
+                desc: "Loc no 4/0 DC+6 tower erection and tightening complete",
+                img: "/gallery/project-img3.webp",
+              },
+              {
+                title: "Double Circuit Tower Installation Work",
+                desc: "Loc no 31/1 DB+6 tower erection complete tightening pending.",
+                img: "/gallery/project-img4.webp",
+              },
+              {
+                title: "DA+6 Tower Erection & Line Tightening",
+                desc: "Loc no 3/2 DA+6 tower erection and tightening complete",
+                img: "/gallery/project-img5.webp",
+              },
+              {
+                title: "Transmission Structure Installation – DA+6",
+                desc: "Loc no 3/1 DA+6 tower erection and tightening complete",
+                img: "/gallery/project-img6.webp",
+              },
+              {
+                title: "Kanakagiri to Koppal Transmission Line Project",
+                desc: "Kanakagiri to Koppal Loc no 10/0 (DC+6) Tower erection done Tightening pending",
+                img: "/gallery/project-img7.webp",
+              },
+            ].map((project, index) => (
+              <div
+                key={index}
+                data-aos="zoom-in-up"
+                data-aos-delay={index * 100}
+                className="group bg-[#f8fafc] rounded-2xl overflow-hidden shadow-md hover:shadow-xl  border-2 border-transparent hover:border-green-600 transition-all duration-500"
+              >
+                {/* IMAGE */}
+               <div className="relative h-[280px] overflow-hidden cursor-pointer">
+  <img
+    src={project.img}
+    alt={project.title}
+    onClick={() => setSelectedImage(project.img)}
+    className="w-full h-full object-cover transition duration-500 group-hover:scale-105"
+  />
+</div>
+
+                {/* CONTENT */}
+                <div className="p-5">
+                  <h3 className="text-base font-semibold text-[#0b1220] mb-2">
+                    {project.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {project.desc}
+                  </p>
+                </div>
+              </div>
+            ))}
+
+          </div>
+        </div>
+      </section>
+
+      {/* ================= IMAGE MODAL ================= */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-6"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div
+            className="relative max-w-5xl w-full"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={selectedImage}
+              alt="Full View"
+              className="w-full max-h-[90vh] object-contain rounded-lg"
+            />
+
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-4 right-4 bg-white text-black px-3 py-1 rounded-full hover:bg-red-600 hover:text-white transition"
+            >
+              ✕
+            </button>
+          </div>
+        </div>
+      )}
 
       <Footer />
     </>
