@@ -81,7 +81,7 @@ export default function Intro() {
     <div className="grid lg:grid-cols-2 gap-14 items-center">
 
       {/* IMAGE */}
-      <div className="relative h-[320px] sm:h-[380px] lg:h-[420px] overflow-hidden rounded-3xl shadow-xl">
+      <div className="relative h-[320px] sm:h-[380px] lg:h-[420px] overflow-hidden rounded-3xl shadow-xl order-2 lg:order-1">
         <img
           src="/images/energy-audit-one.webp"
           alt="Energy Audit Inspection"
@@ -90,7 +90,7 @@ export default function Intro() {
       </div>
 
       {/* CONTENT */}
-      <div>
+      <div className="order-1 lg:order-2">
         <h2 className="text-3xl font-semibold text-[#0b1220] mb-4">
           Energy Audit Scope & Methodology
         </h2>
@@ -130,7 +130,7 @@ export default function Intro() {
     <div className="grid lg:grid-cols-2 gap-14 items-center">
 
       {/* CONTENT */}
-      <div>
+      <div >
         <ul className="space-y-3 text-gray-700 text-sm sm:text-base">
           {[
             "Lux level & lighting intensity analysis",
@@ -150,7 +150,7 @@ export default function Intro() {
       </div>
 
       {/* IMAGE */}
-      <div className="relative h-[320px] sm:h-[380px] lg:h-[420px] overflow-hidden rounded-3xl shadow-xl">
+      <div className="relative h-[320px] sm:h-[380px] lg:h-[420px] overflow-hidden rounded-3xl shadow-xl ">
         <img
           src="/images/energy-audit-two.webp"
           alt="Energy Audit Analysis"

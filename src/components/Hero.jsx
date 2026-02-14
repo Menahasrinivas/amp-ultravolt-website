@@ -2,15 +2,15 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay } from "swiper/modules";
 import "swiper/css";
 
-import banner1 from "../assets/banner4.jpg";
-import banner2 from "../assets/bannerimg3.jpg";
-import banner3 from "../assets/banner7.jpg";
-import banner4 from "../assets/banner2.jpg";
+import banner1 from "/banner/hero-banner1.webp";
+import banner2 from "/banner/hero-banner2.webp";
+import banner3 from "/banner/banner-img3.webp";
+import banner4 from "/banner/hero-banner3.webp";
 import { Link } from "react-router-dom";
 
 export default function Hero() {
   return (
-    <section className="relative h-[75vh] w-full overflow-hidden">
+<section className="relative h-[75vh] overflow-hidden flex items-center justify-center">
 
       {/* IMAGE CAROUSEL */}
       <Swiper
@@ -24,14 +24,15 @@ export default function Hero() {
             <img
               src={img}
               alt={`Banner ${i + 1}`}
-              className="h-full w-full object-cover"
+              className="h-full w-full object-cover flex-shrink-0 brightness-110 contrast-110"
+               style={{ imageRendering: "auto" }}
             />
           </SwiperSlide>
         ))}
       </Swiper>
 
       {/* DARK OVERLAY */}
-      <div className="absolute inset-0 bg-black/20 z-10"></div>
+      <div className="absolute inset-0 bg-black/55 z-10"></div>
 
       {/* TEXT CONTENT */}
       <div className="absolute inset-0 z-20 flex items-center justify-center">

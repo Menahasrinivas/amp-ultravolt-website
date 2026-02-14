@@ -1,4 +1,4 @@
-import whyImg from "../assets/why choose us.jpg";
+import whyImg from "/images/home-whychoose.webp";
 
 export default function WhyChooseUs() {
   const points = [

@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { motion  as Motion} from "framer-motion";
 
 const fadeUp = {
@@ -77,7 +77,7 @@ export default function SolarOperationManaement() {
       </section>
 
       {/* OPERATION & MAINTENANCE SECTION */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 space-y-24">
           {/* ================= BLOCK 1: INTRO + TEXT LEFT / IMAGE RIGHT ================= */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -88,7 +88,7 @@ export default function SolarOperationManaement() {
                 <h2 className="text-3xl font-semibold text-[#0b1220] mb-4">
                   Operation & Maintenance (O&M)
                 </h2>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-gray-600 leading-relaxed text-justify">
                   Solar project maintenance maximizes uptime and extends plant
                   life. Reliable O&M ensures uninterrupted power generation,
                   protects warranties, and minimizes downtime risks through
@@ -101,12 +101,12 @@ export default function SolarOperationManaement() {
                 <h3 className="text-xl font-semibold text-[#0b1220]">
                   Why O&M is Critical
                 </h3>
-                <p className="text-gray-600 text-md leading-relaxed">
+                <p className="text-gray-600 text-md leading-relaxed text-justify">
                   O&M issues must be addressed during pre-construction itself.
                   Site managers coordinate maintenance activities, spare parts,
                   utilities, land owners and regulatory authorities.
                 </p>
-                <p className="text-gray-600 text-md leading-relaxed">
+                <p className="text-gray-600 text-md leading-relaxed text-justify">
                   A professional O&M partner deploys skilled engineers and
                   technicians who continuously oversee plant performance,
                   ensuring reliability and long-term asset protection.
@@ -149,9 +149,9 @@ export default function SolarOperationManaement() {
                   data-aos="fade-up"
                   data-aos-delay={i * 100}
                   className="
-              bg-white rounded-2xl p-6
+              bg-slate-200 rounded-2xl p-6
               shadow-md hover:shadow-xl
-              transition hover:-translate-y-1
+              transition hover:-translate-y-1  hover:bg-blue-300
             "
                 >
                   <p className="text-md text-gray-700 font-medium">{item}</p>
@@ -165,7 +165,7 @@ export default function SolarOperationManaement() {
             {/* IMAGE */}
             <div
               data-aos="fade-right"
-              className="h-320px sm:h-360px lg:h-400px overflow-hidden rounded-3xl shadow-lg"
+              className="h-[240px] sm:h-[300px] lg:h-[320px] overflow-hidden rounded-3xl shadow-l"
             >
               <img
                 src="/images/plant.webp"
@@ -175,7 +175,7 @@ export default function SolarOperationManaement() {
             </div>
 
             {/* CONTENT */}
-            <div data-aos="fade-left" className="space-y-4">
+            <div data-aos="fade-left" className="space-y-2">
               <h3 className="text-xl font-semibold text-[#0b1220]">
                 Plant & Site Management
               </h3>
@@ -190,7 +190,7 @@ export default function SolarOperationManaement() {
             </div>
           </div>
           {/* PLANT MAINTENANCE SCOPE – IMAGE CARDS */}
-          <section className="py-20 bg-gray-50">
+          <section className="py-12 bg-gray-50">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
               {/* HEADING */}
               <div className="text-center mb-14">
@@ -299,7 +299,7 @@ export default function SolarOperationManaement() {
       </section>
 
       {/* ================= OUR SERVICES PORTFOLIO ================= */}
-      <section className="bg-white py-20">
+      <section className="bg-white py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10 space-y-20">
           {/* SECTION HEADING */}
           <div data-aos="fade-up" className="max-w-3xl mx-auto text-center">
@@ -314,7 +314,7 @@ export default function SolarOperationManaement() {
           </div>
 
           {/* ================= PREVENTIVE MAINTENANCE PACKAGES ================= */}
-          <section className="bg-[#f7faf9] py-20">
+          <section className="bg-[#f7faf9] py-12">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* LEFT IMAGE */}
@@ -381,7 +381,7 @@ export default function SolarOperationManaement() {
             </div>
           </section>
           {/* ================= UPTIME & MONITORING ================= */}
-          <section className="py-20 bg-white">
+          <section className="py-12 bg-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
               <div className="grid lg:grid-cols-2 gap-12 items-center">
                 {/* LEFT IMAGE */}
@@ -455,7 +455,7 @@ export default function SolarOperationManaement() {
           {/* ================= NETWORK OPERATIONS CENTRE ================= */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             {/* CONTENT */}
-            <div data-aos="fade-right" className="space-y-4">
+            <div data-aos="fade-right" className="space-y-2">
               <h3 className="text-xl font-semibold text-[#0b1220]">
                 State-of-the-art Network Operations Centre (NOC)
               </h3>

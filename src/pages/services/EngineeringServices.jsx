@@ -16,7 +16,7 @@ export default function EngineeringServicesAmp() {
       <Header />
 
       {/* ================= PAGE BANNER ================= */}
-<section className="relative h-[55vh]">
+<section className="relative h-[40vh] sm:h-[50vh] md:h-[55vh]">
   <img
     src="/banner/engg-services-banner.webp"
     alt="Engineering Services"
@@ -28,7 +28,7 @@ export default function EngineeringServicesAmp() {
       <h1 className="text-white text-4xl font-semibold mb-3">
         Engineering Services
       </h1>
-      <p className="text-gray-200 max-w-3xl mx-auto leading-relaxed">
+      <p className="text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify">
         Comprehensive engineering solutions delivering reliability, safety
         and performance across substations, transmission systems and
         renewable energy infrastructure.
@@ -38,7 +38,7 @@ export default function EngineeringServicesAmp() {
 </section>
 
 {/* ================= ENGINEERING ================= */}
-<section className="py-20 bg-white text-[#0b1220]">
+<section className="py-12 bg-white text-[#0b1220]">
   <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-14 items-center">
 
     {/* LEFT IMAGE */}
@@ -59,7 +59,7 @@ export default function EngineeringServicesAmp() {
         Engineering Services
       </h2>
 
-      <p className="text-gray-700 leading-relaxed mb-6">
+      <p className="text-gray-700 leading-relaxed mb-6 text-justify">
         Comprehensive electrical and civil engineering solutions designed to
         meet statutory standards, operational safety, and optimized project
         execution.
@@ -113,7 +113,7 @@ export default function EngineeringServicesAmp() {
         Substation – Detailed Engineering
       </h2>
 
-      <p className="text-gray-200 leading-relaxed mb-8">
+      <p className="text-gray-200 leading-relaxed mb-8 text-justify">
         AmpUltraVolt has completed <strong>100+ assignments</strong> over the
         past decade in Switchyard and Substation detailed engineering services
         up to <strong>765kV</strong>, across India and overseas. Our engineering
@@ -170,7 +170,7 @@ export default function EngineeringServicesAmp() {
         Transmission Line Engineering
       </h2>
 
-      <p className="text-gray-300 leading-relaxed mb-4">
+      <p className="text-gray-300 leading-relaxed mb-4 text-justify">
         Comprehensive engineering services for
         <strong> 132kV / 220kV / 400kV & 765kV </strong>
         transmission line projects with optimized design,

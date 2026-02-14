@@ -46,18 +46,18 @@ export default function WaterConservationAudit() {
               Professional Water Audit & Management Services
             </h2>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               AmpUltraVolt offers Water Audits, Wastewater Management and
               Engineering services for buildings and industrial complexes.
             </p>
 
-            <p className="text-gray-600 leading-relaxed mb-4">
+            <p className="text-gray-600 leading-relaxed mb-4 text-justify">
               Our objective is to assist clients in reducing costly water loss
               through effective conservation strategies and leakage control
               programs across water distribution networks.
             </p>
 
-            <p className="text-gray-600 leading-relaxed">
+            <p className="text-gray-600 leading-relaxed text-justify">
               Our experienced analytical, design and engineering teams identify
               improvement areas that provide immediate and long-term water cost
               savings.
@@ -201,7 +201,7 @@ export default function WaterConservationAudit() {
 
           {/* FOOT NOTE */}
           <div className="mt-16 text-center max-w-3xl mx-auto">
-            <p className="text-gray-600">
+            <p className="text-gray-600 text-justify">
               Our water audits deliver measurable results through data-driven
               insights, helping clients achieve efficient, compliant and
               sustainable water management.

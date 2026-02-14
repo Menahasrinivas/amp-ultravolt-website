@@ -16,7 +16,7 @@ export default function RenewablePowerAmp() {
       <Header />
 
       {/* ================= PAGE BANNER ================= */}
-      <section className="relative h-[55vh]">
+     <section className="relative h-[40vh] sm:h-[50vh] md:h-[55vh]">
         <img
           src="/banner/windpower-banner.webp"
           alt="Wind Power Engineering"
@@ -28,7 +28,7 @@ export default function RenewablePowerAmp() {
             <h1 className="text-white text-4xl font-semibold mb-3">
               Wind Power Engineering
             </h1>
-            <p className="text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify">
               Delivering detailed electrical, civil and structural engineering
               solutions for wind farm substations up to 220kV.
             </p>
@@ -46,7 +46,7 @@ export default function RenewablePowerAmp() {
               Wind Power
             </h2>
 
-            <p className="text-gray-700 leading-relaxed mb-8 text-sm sm:text-base">
+            <p className="text-gray-700 leading-relaxed mb-8 text-sm sm:text-base text-justify">
               AmpUltraVolt has executed detailed engineering assignments for
               <strong> Windfarm Substations up to 220kV</strong>, delivering
               robust and compliant renewable power solutions.

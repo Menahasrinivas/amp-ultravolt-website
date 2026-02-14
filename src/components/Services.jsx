@@ -1,7 +1,7 @@
-import solar from "../assets/solar.jpg";
-import electrical from "../assets/electrical.jpg";
-import audit from "../assets/audit.jpg";
-import maintenance from "../assets/maintenance.jpg";
+import solar from "/images/home-services.webp";
+import electrical from "/images/home-img2.webp";
+import audit from "/images/home-img3.webp";
+import maintenance from "/images/home-img4.webp";
 
 export default function Services() {
   const services = [

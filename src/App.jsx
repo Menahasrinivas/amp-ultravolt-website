@@ -2,11 +2,11 @@ import { Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
 
 import Home from "./pages/Home";
-import CompanyAbout from "./pages/CompanyAbout";
-import CompanyKeyManagement from "./pages/CompanyKeyManagement";
-import CompanySoftware from "./pages/CompanySoftware";
-import EpcSolar from "./pages/EPC";
-import SolarOperationManaement from "./pages/SolarOM";
+import CompanyAbout from "./pages/company/CompanyAbout";
+import CompanyKeyManagement from "./pages/company/CompanyKeyManagement";
+import CompanySoftware from "./pages/company/CompanySoftware";
+import EpcSolar from "./pages/solarpowerplant/EPC";
+import SolarOperationManaement from "./pages/solarpowerplant/SolarOM";
 import Intro from "./pages/enery_audit/Intro";
 import GalleryImages from "./pages/Gallery";
 import ContactInfo from "./pages/Contact";

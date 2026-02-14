@@ -1,7 +1,7 @@
-import project1 from "../assets/project1.jpg";
-import project2 from "../assets/project2.jpg";
-import project3 from "../assets/project3.jpg";
-import project4 from "../assets/project4.jpg";
+import project1 from "/images/home-project1.webp";
+import project2 from "/images/home-project2.webp";
+import project3 from "/images/home-project3.webp";
+import project4 from "/images/home-project4.webp";
 
 export default function Projects() {
   const projects = [
@@ -28,7 +28,7 @@ export default function Projects() {
   ];
 
   return (
-    <section className="py-16 bg-slate-50">
+    <section className="py-16 bg-slate-200">
       <div className="max-w-7xl mx-auto px-4">
 
         {/* SECTION TITLE */}
@@ -36,7 +36,7 @@ export default function Projects() {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
             Our Projects
           </h2>
-          <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
+          <p className="mt-3 text-gray-600 max-w-2xl mx-auto text-justify">
             A glimpse of our successfully executed projects across
             solar, electrical and energy solutions.
           </p>

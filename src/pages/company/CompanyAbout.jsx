@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { motion as Motion } from "framer-motion";
 
 const fadeUp = {
@@ -22,7 +22,7 @@ export default function CompanyAbout() {
       <Header />
 
       {/* PAGE BANNER */}
-      <section className="relative h-[55vh]">
+      <section className="relative h-[55vh]   bg-center bg-cover">
         <img
           src="/banner/aboutbanner.webp"
           alt="AmpUltraVolt Engineering"
@@ -112,7 +112,7 @@ export default function CompanyAbout() {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center"
+        className="max-w-6xl mx-auto px-6 py-4 md:py-6 grid md:grid-cols-2 gap-12 items-center"
       >
         <div>
           <h2 className="text-3xl font-semibold mb-6">
@@ -153,7 +153,7 @@ export default function CompanyAbout() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center">
+            <div className="flex justify-center" >
               <img
                 src="/images/core-services.webp"
                 alt="AmpUltraVolt Core Services"
@@ -244,7 +244,7 @@ export default function CompanyAbout() {
                         <h3 className="text-xl font-semibold mb-1">
                           {item.title}
                         </h3>
-                        <p className="text-gray-200 text-sm leading-relaxed max-w-lg">
+                        <p className="text-gray-200 text-sm leading-relaxed max-w-lg" data-aos="fade-up">
                           {item.desc}
                         </p>
                       </div>

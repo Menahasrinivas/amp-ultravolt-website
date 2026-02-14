@@ -56,23 +56,23 @@ export default function ThermographyAudit() {
     </div>
 
     {/* CONTENT */}
-    <div data-aos="fade-left">
+    <div data-aos="fade-left" >
       <h2 className="text-3xl font-semibold text-[#0b1220] mb-6">
         What is Thermography Audit?
       </h2>
 
-      <p className="text-gray-600 leading-relaxed mb-4">
+      <p className="text-gray-600 leading-relaxed mb-4 text-justify">
         Thermography is a non-contact, image-based temperature measurement
         technique used to identify weak points in electrical installations
         without disturbing active operation.
       </p>
 
-      <p className="text-gray-600 leading-relaxed mb-4">
+      <p className="text-gray-600 leading-relaxed mb-4 text-justify">
         Thermal imaging detects abnormal heat patterns caused by loose
         connections, overloading, insulation failures, or component degradation.
       </p>
 
-      <p className="text-gray-600 leading-relaxed">
+      <p className="text-gray-600 leading-relaxed text-justify">
         Inspections are conducted in coordination with electrical experts to
         ensure accurate interpretation and preventive maintenance planning.
       </p>
@@ -91,7 +91,7 @@ export default function ThermographyAudit() {
       <h2 className="text-3xl font-semibold text-[#0b1220] mb-3">
         Benefits of Thermography Study
       </h2>
-      <p className="text-gray-600 leading-relaxed text-sm">
+      <p className="text-gray-600 leading-relaxed text-sm text-justify">
         Thermography enables early risk identification, improves operational
         reliability and enhances safety without interrupting live systems.
       </p>
@@ -190,7 +190,7 @@ export default function ThermographyAudit() {
       <p
         data-aos="fade-up"
         data-aos-delay="100"
-        className="text-gray-200 leading-relaxed"
+        className="text-gray-200 leading-relaxed text-justify"
       >
         Thermography is applied across critical electrical assets to detect
         thermal anomalies under real operating conditions, supporting
@@ -272,7 +272,7 @@ export default function ThermographyAudit() {
         data-aos="fade-left"
         className="space-y-5"
       >
-        <p className="text-gray-300 text-sm leading-relaxed">
+        <p className="text-gray-300 text-sm leading-relaxed text-justify">
           Thermographic inspections commonly reveal critical electrical issues
           that may lead to failures, fire risks and operational losses if left
           unaddressed.

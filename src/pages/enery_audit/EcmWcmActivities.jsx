@@ -32,7 +32,7 @@ export default function EcmWcmActivities() {
               ECM & WCM Activities
             </h1>
 
-            <p className="text-gray-200 mt-3 max-w-2xl mx-auto">
+            <p className="text-gray-200 mt-3 max-w-2xl mx-auto text-justify">
               Implementing Energy and Water Conservation Measures to optimize
               resource utilization, reduce operational costs, and support
               long-term sustainability across facilities.
@@ -53,13 +53,13 @@ export default function EcmWcmActivities() {
           Energy Conservation Measures (ECM)
         </h2>
 
-        <p className="text-gray-600 leading-relaxed mb-4">
+        <p className="text-gray-600 leading-relaxed mb-4 text-justify">
           The Energy Conservation Measures (ECM) project focuses on identifying
           and implementing high-impact energy-saving opportunities that lead
           to significant reduction in energy consumption and operating costs.
         </p>
 
-        <p className="text-gray-600 leading-relaxed mb-6">
+        <p className="text-gray-600 leading-relaxed mb-6 text-justify">
           ECM is practiced with the objective of providing a structured framework
           for conducting energy audits, evaluation, and analysis to derive
           meaningful and practical energy conservation solutions that are easy
@@ -110,7 +110,7 @@ export default function EcmWcmActivities() {
       <h2 className="text-4xl font-semibold text-[#0b1220] mb-6" data-aos="fade-up">
         WCM (World Class Manufacturing) Activities
       </h2>
-      <p className="text-gray-600 text-lg leading-relaxed text-justify">
+      <p className="text-gray-600 text-lg leading-relaxed text-justify text-justify">
         We provide structured consultancy services for implementing World Class
         Manufacturing practices focused on safety, operational excellence,
         standardization, and continuous improvement.

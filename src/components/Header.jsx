@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo1.png";
+import logo from "/images/logo1.png";
 import { Link } from "react-router-dom";
 // vercel redeploy trigger
 

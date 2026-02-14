@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { motion as Motion } from "framer-motion";
 // const fadeUp = {
 //   hidden: { opacity: 0, y: 30 },

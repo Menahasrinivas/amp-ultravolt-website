@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
+import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -39,18 +39,18 @@ export default function EpcSolar() {
 
       {/* ================= EPC MASTER SECTION ================= */}
       <section className="relative py-12 bg-linear-to-b from-[#f4f7fb] to-white overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(37,99,235,0.08),transparent_45%)]"></div>
+        {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_70%_20%,rgba(37,99,235,0.08),transparent_45%)]"></div> */}
 
         <div className="relative max-w-7xl mx-auto px-6">
           {/* HEADER */}
           <div className="max-w-4xl mb-20" data-aos="fade-up">
-            <p className="text-sm tracking-widest text-blue-600 mb-4">
+            <p className="text-sm tracking-widest text-slate-600 mb-4">
               ENGINEERING • PROCUREMENT • CONSTRUCTION
             </p>
 
             <h2 className="text-4xl font-semibold mb-6 text-[#0b1220]">
               End-to-End Solar EPC
-              <span className="block text-blue-700">
+              <span className="block text-slate-600">
                 Designed for Reliability & Long-Term Performance
               </span>
             </h2>
@@ -108,14 +108,14 @@ export default function EpcSolar() {
           <div className="grid lg:grid-cols-2 gap-14 items-center mb-16">
             {/* LEFT CONTENT */}
             <div data-aos="fade-right">
-              <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-blue-600 mb-4">
-                <span className="w-6 h-2px bg-blue-600"></span>
+              <span className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-slate-600 mb-4">
+                <span className="w-6 h-2px bg-slate-600"></span>
                 ENGINEERED RELIABILITY
               </span>
 
               <h3 className="text-3xl lg:text-[32px] font-semibold mb-6 text-[#0b1220] leading-tight">
                 Reliability Built Into
-                <span className="block text-blue-700">
+                <span className="block text-slate-600">
                   Every Stage of EPC Execution
                 </span>
               </h3>
@@ -188,7 +188,7 @@ export default function EpcSolar() {
         data-aos="fade-up"
         data-aos-duration="900"
         data-aos-offset="200"
-        className="relative min-h-[75vh] py-16 px-16 mx-w-7xl bg-center bg-cover"
+        className="relative min-h-screen rounded-2xl overflow-hidden py-16 px-4 bg-center bg-cover"
         style={{
           backgroundImage: "url('/images/epc-service.webp')", marginLeft:"20px"
         }}
@@ -196,13 +196,13 @@ export default function EpcSolar() {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/45"></div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-10">
+        <div className="relative z-10 max-w-[1400px] mx-auto px-2 lg:px-6">
           {/* TITLE */}
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <div className="max-w-3xl mx-auto text-center mb-16 text-justify">
             <h3 className="text-3xl font-semibold text-white mb-3">
               Electrical Inspection, Testing & Commissioning
             </h3>
-            <p className="text-gray-300 text-sm sm:text-base  text-justify">
+            <p className="text-gray-300 text-md md:text-base  text-justify">
               High-voltage engineering expertise covering substations,
               transformers, protection systems and transmission infrastructure.
             </p>
@@ -214,11 +214,11 @@ export default function EpcSolar() {
 
             <div
               className={`
-    absolute left-1/2 top-0 h-full w-[3px]
-    bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600
-    -translate-x-1/2
-    hidden md:block
-  `}
+                         absolute left-1/2 top-0 h-full w-[3px]
+                          bg-gradient-to-b from-blue-400 via-blue-500 to-blue-600
+                       -translate-x-1/2
+                      hidden md:block
+                     `}
             ></div>
 
             {/* ITEMS */}
@@ -325,7 +325,7 @@ export default function EpcSolar() {
         </div>
       </section>
       {/* ================= RELIABILITY STATEMENT ================= */}
-      <section className="py-16 bg-slate-100" data-aos="fade-up">
+      <section className="mt-0 py-12 bg-slate-100" data-aos="fade-up">
         <div className="max-w-4xl mx-auto px-6 text-center">
           <p className="text-lg text-gray-700  text-justify">
             AmpUltraVolt ensures reliability, risk-free yields, and long-term

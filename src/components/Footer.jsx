@@ -50,12 +50,12 @@ export default function Footer() {
   
 
   {/* CONNECT WITH US – RIGHT */}
-  <div className="md:text-right">
+  <div className="text-center md:text-right">
     <h4 className="text-base font-semibold text-slate-900 mb-3">
       Connect With Us
     </h4>
 
-    <div className="flex gap-3 md:justify-end">
+    <div className="flex gap-3 justify-center md:justify-end">
       {/* WHATSAPP */}
       <a
         href="https://wa.me/919999999999"

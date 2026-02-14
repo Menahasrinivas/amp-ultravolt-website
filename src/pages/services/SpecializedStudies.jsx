@@ -16,7 +16,7 @@ export default function SpecializedStudiesAmp() {
       <Header />
 
       {/* ================= PAGE BANNER ================= */}
-      <section className="relative h-[55vh]">
+   <section className="relative h-[40vh] sm:h-[50vh] md:h-[55vh]">
         <img
           src="/banner/study-banner.webp"
           alt="Power System Studies"
@@ -28,7 +28,7 @@ export default function SpecializedStudiesAmp() {
             <h1 className="text-white text-4xl font-semibold mb-4">
               Power System Studies
             </h1>
-            <p className="text-gray-200 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-gray-200 max-w-3xl mx-auto leading-relaxed text-justify">
               Advanced analytical studies ensuring system reliability, safety,
               stability and insulation performance for HV & EHV power networks.
             </p>
@@ -140,7 +140,7 @@ export default function SpecializedStudiesAmp() {
             <h2 className="text-3xl font-semibold text-white mb-2">
               Power System Studies
             </h2>
-            <p className="text-white leading-relaxed text-sm">
+            <p className="text-white leading-relaxed text-sm text-justify">
               Using <strong>ETAP 12.0 Software Package</strong>, AmpUltraVolt performs
               in-depth analytical studies to evaluate system performance, stability,
               protection adequacy, and compliance under various operating scenarios.
@@ -180,7 +180,7 @@ export default function SpecializedStudiesAmp() {
                   <h3 className="text-sm font-semibold text-[#0b1220] mb-1 hover:text-blue-700">
                     {item}
                   </h3>
-                  <p className="text-xs sm:text-sm text-gray-700 leading-snug">
+                  <p className="text-xs sm:text-sm text-gray-700 leading-snug text-justify">
                     Comprehensive evaluation of system behavior to ensure operational
                     reliability, safety margins, and compliance with grid standards.
                   </p>

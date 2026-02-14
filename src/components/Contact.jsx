@@ -1,4 +1,4 @@
-import contactBg from "../assets/contact-bg.jpg";
+import contactBg from "/images/contact-bg.webp";
 
 export default function Contact() {
   return (
@@ -24,7 +24,7 @@ export default function Contact() {
             Ready to Power Your Project?
           </h2>
 
-          <p className="text-gray-300 max-w-2xl mx-auto mb-5">
+          <p className="text-gray-300 max-w-2xl mx-auto mb-5 text-justify">
             Get in touch with our expert team to discuss your solar, electrical
             or energy efficiency requirements. We are ready to deliver reliable
             and sustainable solutions.
